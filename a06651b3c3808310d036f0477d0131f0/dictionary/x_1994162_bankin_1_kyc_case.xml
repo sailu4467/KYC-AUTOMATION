@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="live_feed=true" db_object_id="c039193bc3808310d036f0477d0131ea" label="KYC CASE" max_length="40" name="x_1994162_bankin_1_kyc_case" type="collection">
+        <element label="CUSTOMER" max_length="40" name="customer" type="string"/>
+        <element label="CASE NUMBER" max_length="40" name="case_number" type="string"/>
+        <element display="true" label="assigned analyst" max_length="32" name="assigned_analyst" reference="imp_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element choice="1" label="Risk LEVEL" max_length="40" name="risk_level" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="medium" sequence="1" value="medium"/>
+                <element inactive_on_update="false" label="low" sequence="0" value="low"/>
+                <element inactive_on_update="false" label="High" sequence="2" value="high"/>
+            </choice>
+        </element>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element choice="1" label="state" max_length="40" name="state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="not closed" sequence="3" value="not_closed"/>
+                <element inactive_on_update="false" label="closed" sequence="2" value="closed"/>
+                <element inactive_on_update="false" label="open" sequence="0" value="open"/>
+                <element inactive_on_update="false" label="in progress" sequence="1" value="in_progress"/>
+            </choice>
+        </element>
+        <element label="SLA" max_length="40" name="sla" type="glide_duration"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Risk Level" max_length="40" name="risklevel" type="string">
+            <choice>
+                <element inactive_on_update="false" label="low" sequence="0" value="low"/>
+                <element inactive_on_update="false" label="High" sequence="2" value="high"/>
+                <element inactive_on_update="false" label="Medium" sequence="1" value="medium"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Email" max_length="40" name="u_string_1" type="string"/>
+        <element label="Approval group" max_length="32" name="approval_group" reference="sys_user_group" type="reference"/>
+        <element label="KYC Manager" max_length="40" name="kyc_manager" type="string"/>
+        <element label="closed date" max_length="40" name="closed_date" type="glide_date_time"/>
+        <element label="Case type" max_length="40" name="case_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="re kyc" sequence="1" value="re_kyc"/>
+                <element inactive_on_update="false" label="new" sequence="0" value="new"/>
+            </choice>
+        </element>
+        <element label="opened date" max_length="40" name="opened_date" type="glide_date_time"/>
+        <element label="compliance_officer" max_length="40" name="compliance_officer" type="string"/>
+        <element choice="1" label="State" max_length="40" name="stat0" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="In progress" sequence="1" value="in_progress"/>
+                <element inactive_on_update="false" label="open" sequence="0" value="open"/>
+                <element inactive_on_update="false" label="Closed" sequence="2" value="closed"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="approval_group"/>
+        </index>
+        <index name="index2">
+            <element name="assigned_analyst"/>
+        </index>
+        <index name="index3">
+            <element name="customer"/>
+        </index>
+        <index name="index4">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="DELETE">
+        <sc_cat_item display_value="KYC Request form">4e12a2f7c3c88310d036f0477d0131fe</sc_cat_item>
+        <sc_catalog display_value="Technical Catalog">742ce428d7211100f2d224837e61036d</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-16 05:31:02</sys_created_on>
+        <sys_id>7c797559c35c4b10d036f0477d0131d1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Technical Catalog.KYC Request form</sys_name>
+        <sys_package display_value="BANKING KYC" source="x_1994162_bankin_1">a06651b3c3808310d036f0477d0131f0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BANKING KYC">a06651b3c3808310d036f0477d0131f0</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_7c797559c35c4b10d036f0477d0131d1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-16 05:31:02</sys_updated_on>
+    </sc_cat_item_catalog>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="BANKING KYC">a06651b3c3808310d036f0477d0131f0</application>
+        <file_path/>
+        <instance_id>91a13c1c1b8abd94c84543f4bd4bcbe2</instance_id>
+        <instance_name>dev189559</instance_name>
+        <name>sc_cat_item_catalog_7c797559c35c4b10d036f0477d0131d1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog"><sc_cat_item_catalog action="INSERT_OR_UPDATE"><sc_cat_item display_value="KYC Request form">4e12a2f7c3c88310d036f0477d0131fe</sc_cat_item><sc_catalog display_value="Technical Catalog">742ce428d7211100f2d224837e61036d</sc_catalog><sys_class_name>sc_cat_item_catalog</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-16 05:31:02</sys_created_on><sys_id>7c797559c35c4b10d036f0477d0131d1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Technical Catalog.KYC Request form</sys_name><sys_package display_value="BANKING KYC" source="x_1994162_bankin_1">a06651b3c3808310d036f0477d0131f0</sys_package><sys_policy/><sys_scope display_value="BANKING KYC">a06651b3c3808310d036f0477d0131f0</sys_scope><sys_update_name>sc_cat_item_catalog_7c797559c35c4b10d036f0477d0131d1</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-16 05:31:02</sys_updated_on></sc_cat_item_catalog></record_update>]]></payload>
+        <payload_hash>-875308580</payload_hash>
+        <record_name>Technical Catalog.KYC Request form</record_name>
+        <reverted_from/>
+        <source>2c6651b3c3808310d036f0477d0131f3</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-16 05:31:02</sys_created_on>
+        <sys_id>cd797559c35c4b10d036f0477d0131dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19d94c577b90000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-16 05:31:02</sys_updated_on>
+        <type>Catalog Items Catalog</type>
+        <update_guid>897975594f5c4b10fcb42b09392b09db</update_guid>
+        <update_guid_history>897975594f5c4b10fcb42b09392b09db:-875308580</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Technical Catalog.KYC Request form">85797559c35c4b10d036f0477d0131eb</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-16 05:31:02</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_catalog">sc_cat_item_catalog</sys_db_object>
+        <sys_id>1e0e438e01ce46898c1a6a91067380c9</sys_id>
+        <sys_metadata>7c797559c35c4b10d036f0477d0131d1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Technical Catalog.KYC Request form</sys_name>
+        <sys_package display_value="BANKING KYC" source="x_1994162_bankin_1">a06651b3c3808310d036f0477d0131f0</sys_package>
+        <sys_parent display_value="KYC Request form">4e12a2f7c3c88310d036f0477d0131fe</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="BANKING KYC">a06651b3c3808310d036f0477d0131f0</sys_scope>
+        <sys_scope_delete display_value="">19ac11cd0db64b3a8b9585044c7329b1</sys_scope_delete>
+        <sys_update_name>sc_cat_item_catalog_7c797559c35c4b10d036f0477d0131d1</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_catalog_7c797559c35c4b10d036f0477d0131d1">cd797559c35c4b10d036f0477d0131dc</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-16 05:31:02</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

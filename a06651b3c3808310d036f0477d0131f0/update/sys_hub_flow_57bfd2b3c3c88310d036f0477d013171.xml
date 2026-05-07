@@ -1,0 +1,1191 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=2120959000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>kyc_process_flow</internal_name>
+        <label_cache>[{"name":"67ecf4e9-863f-4936-9fcd-ee5752f54932.email.user","label":"2 - Send Email➛email➛User","reference":"","reference_display":"User","type":"string","base_type":"string","parent_table_name":"sys_email","column_name":"user","usedInstances":{}},{"name":"{{static.2408aabfc3c88310d036f0477d0131da}}","label":"Abel Tuter","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","choices":[{"order":0.0}],"usedInstances":{"9ad80405-ba24-48c2-9a6e-e97fb7e7d0e5":["approval_conditions"],"8384903f-18b7-478d-9f11-ed05a187057e":["approval_conditions"],"17ebf4d2-142a-4d77-a92f-6c62a27206fd":["approval_conditions"],"7890021b-9842-4c55-b202-1e3f1dd58ce8":["approval_conditions"],"ab036774-73fd-4687-978e-114ff93192d7":["approval_conditions"]}},{"name":"Created_1.current.state","label":"Trigger - Record Created➛KYC CASE Record➛state (state)","reference":"","reference_display":"state (state)","type":"choice","base_type":"choice","parent_table_name":"x_1994162_bankin_1_kyc_case","column_name":"state","choices":[{"label":"-- None --","image":"","used":false,"reference":false,"rawLabel":"-- None --","selected":false,"missing":false,"value":""},{"image":"","used":false,"label":"open","reference":false,"rawLabel":"open","selected":false,"missing":false,"value":"open","parameters":{"name":"x_1994162_bankin_1_kyc_case","dependent_values":[""]}},{"image":"","used":false,"label":"in progress","reference":false,"rawLabel":"in progress","selected":false,"missing":false,"value":"in_progress","parameters":{"name":"x_1994162_bankin_1_kyc_case","dependent_values":[""]}},{"image":"","used":false,"label":"closed","reference":false,"rawLabel":"closed","selected":false,"missing":false,"value":"closed","parameters":{"name":"x_1994162_bankin_1_kyc_case","dependent_values":[""]}},{"image":"","used":false,"label":"not closed","reference":false,"rawLabel":"not closed","selected":false,"missing":false,"value":"not_closed","parameters":{"name":"x_1994162_bankin_1_kyc_case","dependent_values":[""]}}],"usedInstances":{"5adfd11d-d5b7-4dd5-8106-4dddc2fea317":["condition"]}},{"name":"Created_1.current.assigned_analyst.sys_import_state_comment","label":"Trigger - Record Created➛KYC CASE Record➛assigned analyst➛Comment","reference":"","reference_display":"Comment","type":"string","base_type":"string","parent_table_name":"imp_user","column_name":"sys_import_state_comment","usedInstances":{}},{"name":"{{static.62826bf03710200044e0bfc8bcbe5df1}}","label":"Abel Tuter","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","choices":[{"order":0.0}],"usedInstances":{"d27a4157-bf42-493b-8e31-06dbe1e47056":["approval_conditions"],"c18c6fd7-f4e9-4457-868c-7a0337f3a9b1":["approval_conditions"]}},{"name":"Created_1.current.approval_group.manager.manager","label":"Trigger - Record Created➛KYC CASE Record➛Approval group➛Manager➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager","usedInstances":{"17ebf4d2-142a-4d77-a92f-6c62a27206fd":["approval_conditions"]}},{"name":"Created_1.current.case_type","label":"Trigger - Record Created➛KYC CASE Record➛Case type","reference":"","reference_display":"Case type","type":"choice","base_type":"choice","parent_table_name":"x_1994162_bankin_1_kyc_case","column_name":"case_type","choices":[{"order":0.0}],"usedInstances":{}},{"name":"Created_1.current","label":"Trigger - Record Created➛KYC CASE Record","reference":"x_1994162_bankin_1_kyc_case","reference_display":"KYC CASE","type":"reference","base_type":"reference","usedInstances":{"34a6bf08-b2ed-42e2-ad67-4b29bb66237b":["record"],"d27a4157-bf42-493b-8e31-06dbe1e47056":["record"],"62a1288d-3d7e-4555-8959-a44d7eed82fe":["condition"],"70207bf0-e583-4eaf-a54f-36ee9d0be606":["record"],"17ebf4d2-142a-4d77-a92f-6c62a27206fd":["record"],"67ecf4e9-863f-4936-9fcd-ee5752f54932":["record"],"c18c6fd7-f4e9-4457-868c-7a0337f3a9b1":["record"],"9ad80405-ba24-48c2-9a6e-e97fb7e7d0e5":["record"],"0ec5575f-5fa8-4cba-89b1-7aa5abdb1883":["record"],"20143ea3-021a-4858-be42-cf8730723af3":["record"],"b6e34606-65e1-4eb3-bac0-0fba2f618311":["record"],"8384903f-18b7-478d-9f11-ed05a187057e":["record"],"e9585694-8317-4df8-b5b7-a9bdf35ef2a7":["record"],"7890021b-9842-4c55-b202-1e3f1dd58ce8":["record"],"079e6e34-aa76-48cc-9ec6-02800ffa9033":["record"],"b503b1b9-4338-4558-9e3c-78d4a6c45b8b":["record"],"ab036774-73fd-4687-978e-114ff93192d7":["record"],"771491af-47ed-407e-98bc-aabddc8d0f82":["record"]},"attributes":{}},{"name":"Created_1.current.assigned_analyst","label":"Trigger - Record Created➛KYC CASE Record➛assigned analyst","reference":"imp_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1994162_bankin_1_kyc_case","column_name":"assigned_analyst","usedInstances":{"0ec5575f-5fa8-4cba-89b1-7aa5abdb1883":["record"],"b6e34606-65e1-4eb3-bac0-0fba2f618311":["assigned_analyst"]}},{"name":"Created_1.current.customer.email","label":"Trigger - Record Created➛KYC CASE Record➛CUSTOMER➛. Email","reference":"","reference_display":". Email","type":"string","base_type":"string","parent_table_name":"x_1994162_bankin_1_customer","column_name":"email","usedInstances":{}},{"name":"Created_1.table_name","label":"Trigger - Record Created➛KYC CASE Table","reference":"x_1994162_bankin_1_kyc_case","reference_display":"KYC CASE","type":"table_name","base_type":"table_name","usedInstances":{},"attributes":{"test_input_hidden":"true"}},{"name":"Created_1.current.assigned_analyst.email","label":"Trigger - Record Created➛KYC CASE Record➛assigned analyst➛Email","reference":"","reference_display":"Email","type":"string","base_type":"string","parent_table_name":"imp_user","column_name":"email","usedInstances":{"67ecf4e9-863f-4936-9fcd-ee5752f54932":["ah_to"]}},{"name":"Created_1.current.approval_group.manager","label":"Trigger - Record Created➛KYC CASE Record➛Approval group➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user_group","column_name":"manager","choices":[{"order":0.0}],"usedInstances":{"20143ea3-021a-4858-be42-cf8730723af3":["approval_conditions"],"70207bf0-e583-4eaf-a54f-36ee9d0be606":["approval_conditions"],"e9585694-8317-4df8-b5b7-a9bdf35ef2a7":["approval_conditions"],"079e6e34-aa76-48cc-9ec6-02800ffa9033":["approval_conditions"]}},{"name":"Created_1.current.approval_group","label":"Trigger - Record Created➛KYC CASE Record➛Approval group","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","parent_table_name":"x_1994162_bankin_1_kyc_case","column_name":"approval_group","choices":[{"order":0.0}],"usedInstances":{"0d55da6c-d253-4139-a798-bbdcd35c7bcd":["condition"]}},{"name":"Created_1.current.risk_level","label":"Trigger - Record Created➛KYC CASE Record➛Risk LEVEL","reference":"","reference_display":"Risk LEVEL","type":"choice","base_type":"choice","parent_table_name":"x_1994162_bankin_1_kyc_case","column_name":"risk_level","choices":[{"label":"-- None --","image":"","used":false,"reference":false,"rawLabel":"-- None --","selected":false,"missing":false,"value":""},{"image":"","used":false,"label":"low","reference":false,"rawLabel":"low","selected":false,"missing":false,"value":"low","parameters":{"name":"x_1994162_bankin_1_kyc_case","dependent_values":[""]}},{"image":"","used":false,"label":"medium","reference":false,"rawLabel":"medium","selected":false,"missing":false,"value":"medium","parameters":{"name":"x_1994162_bankin_1_kyc_case","dependent_values":[""]}},{"image":"","used":false,"label":"High","reference":false,"rawLabel":"High","selected":false,"missing":false,"value":"high","parameters":{"name":"x_1994162_bankin_1_kyc_case","dependent_values":[""]}}],"usedInstances":{"e88201cf-4e77-4aa8-8296-ee5f68ba838b":["condition"],"a04a304b-1589-46bf-b655-1928920e0f88":["condition"],"a017007e-86f8-414c-bbcc-a260cc28f168":["condition"],"cb61c0fb-1cc6-4d00-aece-114d17ae812d":["condition"],"895934eb-42fc-4e3a-9398-f387ac03f65e":["condition"],"58fefaa5-1e98-4e87-b29a-d74435701004":["condition"]}}]</label_cache>
+        <master_snapshot>2cea74b9c3d04f10d036f0477d0131a0</master_snapshot>
+        <master_snapshot_digest/>
+        <name>KYC Process flow</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>1c9a74f3c3e0cbd0d036f0477d0131f7</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-11 16:27:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>57bfd2b3c3c88310d036f0477d013171</sys_id>
+        <sys_mod_count>163</sys_mod_count>
+        <sys_name>KYC Process flow</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="BANKING KYC" source="x_1994162_bankin_1">a06651b3c3808310d036f0477d0131f0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BANKING KYC">a06651b3c3808310d036f0477d0131f0</sys_scope>
+        <sys_update_name>sys_hub_flow_57bfd2b3c3c88310d036f0477d013171</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-07 05:07:57</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>598d3dccc3784fd0d036f0477d013181</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=57bfd2b3c3c88310d036f0477d013171"/>
+    <sys_variable_value action="delete_multiple" query="document_key=57bfd2b3c3c88310d036f0477d013171"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_1994162_bankin_1_kyc_case">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-06 05:36:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1c9a74f3c3e0cbd0d036f0477d0131f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="BANKING KYC">a06651b3c3808310d036f0477d0131f0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 05:36:48</sys_updated_on>
+        <table>x_1994162_bankin_1_kyc_case</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>57bfd2b3c3c88310d036f0477d013171</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-06 05:36:48</sys_created_on>
+        <sys_id>189a74f3c3e0cbd0d036f0477d0131f8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 05:36:48</sys_updated_on>
+        <trigger display_value="">1c9a74f3c3e0cbd0d036f0477d0131f7</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=57bfd2b3c3c88310d036f0477d013171^sys_idNOT IN189a74f3c3e0cbd0d036f0477d0131f8"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=57bfd2b3c3c88310d036f0477d013171"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=57bfd2b3c3c88310d036f0477d013171^sys_idNOT IN9bbfd2b3c3c88310d036f0477d013175"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>57bfd2b3c3c88310d036f0477d013171</id>
+        <name>KYC Process flow</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-11 16:27:26</sys_created_on>
+        <sys_id>9bbfd2b3c3c88310d036f0477d013175</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-11 16:27:26</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=9bbfd2b3c3c88310d036f0477d013175"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=57bfd2b3c3c88310d036f0477d013171^sys_idNOT INa6e5aebfc3c88310d036f0477d0131e4,fae5eebfc3c88310d036f0477d0131b9"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="KYC Process flow">57bfd2b3c3c88310d036f0477d013171</model>
+        <model_id>57bfd2b3c3c88310d036f0477d013171</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_57bfd2b3c3c88310d036f0477d013171</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-11 16:54:25</sys_created_on>
+        <sys_id>a6e5aebfc3c88310d036f0477d0131e4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="BANKING KYC">a06651b3c3808310d036f0477d0131f0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 17:59:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a6e5aebfc3c88310d036f0477d0131e4"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="KYC Process flow">57bfd2b3c3c88310d036f0477d013171</model>
+        <model_id>57bfd2b3c3c88310d036f0477d013171</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_57bfd2b3c3c88310d036f0477d013171</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-11 16:54:25</sys_created_on>
+        <sys_id>fae5eebfc3c88310d036f0477d0131b9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="BANKING KYC">a06651b3c3808310d036f0477d0131f0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 17:59:26</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=fae5eebfc3c88310d036f0477d0131b9"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=57bfd2b3c3c88310d036f0477d013171"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=57bfd2b3c3c88310d036f0477d013171"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=57bfd2b3c3c88310d036f0477d013171^sys_idNOT IN22e5aebfc3c88310d036f0477d0131db"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="KYC Process flow">57bfd2b3c3c88310d036f0477d013171</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-11 16:54:24</sys_created_on>
+        <sys_id>22e5aebfc3c88310d036f0477d0131db</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 18:01:20</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VY2W7jNhT9FUFPLeACWrxEeUsdDxp0OkFtT4siSAVKIm0iNOlKlBJ3kH/vpRZbluQtVqbOUyCSvvfcw3MX5uGbzpCHmX6tT5HHsN7RKZc45IhNV0sMy1Ituxwt1N4C8QBJEa70axnGuKOTUCymeLFkSMJhglgEiyIMcKhfmx09QSzGk1V0F4Al+H1qJrep59vw/eKajtM1+5brIf5EuWu6Tyvf9VGkTgU0AvurP/LDv/411IY3kxHs+HPKghBz/frhsaMvUQjmpXL9rbJFlX+f+MixsOHbpm1ZhmFddU2vb3umFdgIGwYYrHJRwSsbKNkEi18k5gEO1jzU2AoxCu45W61PzIHsjJkFeonov2D9ylDnCAbsPs721p9uTkW27M8F9fH9UlLBs5UMZ7YpWLzgXzL8ikRMUMxkQSKsxBHYw0sFWYHIEZHJXDyPC4efKE+jyzeZ8BFbfyEpQ+rFEkeKcEIZUO9m3EQiDlP049Hwfnzr/nkzHf4yGrvj0WQ6vhtOR7f6axqX+0+sLGYIcyxuFs7r+uY/UczUBfJ44QGajh75IV3KG1/SpFDda2ej5KHgAU1ZqanZL7aibTUX0e+Ts2HsFLRf8liI+u/R73XxZoun6bbfRyjAaIduPVLSbTnyBmiygYRydPsUnK8cI+GuYfxPIs6L0ls1/Iy4jFwpXBQEboklSHkwrEIUAWa3G3+wTmczkD3ly1hGB0WdxfZ6UMFhzOEH7vo+6jpOaVvz95lGgOYBsrDgJgdMPucWxzHXBNf8OARSpAb3qhXWtRSV0gK5W6BZziyZYIZ9WRID+RqVv36jUUT5rIR+7TxdqXtnqzKEoqie4/SxzSSuk55U4qkk88mZbJqEeJhYxkDlsWnYHjGNgdFDJLANw7dKmVwHsxOlrEjiXTL6tHyOUjGyI26/SnEO3ihnw1HaTbaFX5CgJJKXjWE70MyWoFkKWqX82SfVv7Uss+XbbXXuC63l3o+CBMEvgiLGY3r7ERWQMPEMlfUN1Y+IEM9CEfOgWoWUTY3C360TLdU9D/lP+91uTmg/5Nf246XVwA3thXARX7VQ/Wxieg7uYgOKng31zus5jucji5BBf4Ats1L9NjAasX2Iqnfg2pMm3eyqgI3KTZoEf0LtOwNgrQ6eDPD8CpgLs7H+ZXsfo9I9zzF3AWroMlXLagVvxmiAi712s73mOtnk97kZT64cv2cOBv4AXi2Q8aSLPWR2rR5yBn37qlfJ+BqUfTBlAzPf5S0TraIUyI5q8DXbuqzH+XvKNsJSqnZ0epdOz6PMQalfqivR0oIiQk3Rqd1tDmoTDN0vfc221rWFnNf6Nbj+Gda3XKvp7ovgPzXAafP1xGG8P4aaHVAubZyoiCTZZv3sJxXuXvUcYjeXGOI0lZgNmN0wL368OFIKyU5RNc0Zx6Ze0pjBOweDNyRTRSbliWHPSNMWKWbrpFjvR4p99hhV5OLOd+RbwH6gFpbOFW/vY4JjV5DGOk2Jlv+LEAeat9LkHAOZDCZlcKUpv212jmzkrTUyWNbyiaW9HqVoroZ9KzTY0MLvEvj7NKqKFNp9AeNggHo9e8c87FRfwE2ADuC9+LZ1skSSJsXt7V2n2a3abOxepQzaVsSRfanVqJub03lRN7anQ1Gf33j2vd8bUFxoS3n8D6Of0W9GHwAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=57bfd2b3c3c88310d036f0477d013171^sys_idNOT IN098bb079c3d04f10d036f0477d013133,172d367fc38c8310d036f0477d013110,295f8f2cc3d80710d036f0477d01311b,85421be0c31c0710d036f0477d0131f9,d6fbfebbc38c8310d036f0477d013154,e86b3e7bc38c8310d036f0477d01318a"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="KYC Process flow">57bfd2b3c3c88310d036f0477d013171</flow>
+        <generation_source/>
+        <order>10</order>
+        <parent_ui_id>5adfd11d-d5b7-4dd5-8106-4dddc2fea317</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-17 14:17:23</sys_created_on>
+        <sys_id>098bb079c3d04f10d036f0477d013133</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="BANKING KYC">a06651b3c3808310d036f0477d0131f0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 09:39:49</sys_updated_on>
+        <ui_id>771491af-47ed-407e-98bc-aabddc8d0f82</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2YXW/bNhSG/wqha8+V/BnnaqmzYMXSFqiDDkNTCBRJWVwoUROpOG6Q/75Difqwlbl242EJlksfHpIvD9+Hx/aXe4dT59QZ0RN3EoQjPHWHg6Hrngxms2A4C92T6cz1CHV6ToJjBpkZIzIzn2+xyE3g/n6eMawZ9b0+ybOMJfrhAcYpV6nA6882DSIk4oLCuHP65WvPSXEGK2qWOaf3W0P7ShI4YAJSr3C2ZBp9qqRtS9Xr1HymkuQxyPN5Fby0C5zbEfTuHEZgklHl9hx2p1lCGcgJsVCs58Q4oVjLbF1H4Oz0YyKaQMQTDUueKSUJh7oopCOGWIy5QCuuI4RRKazvmPXuFP8G4oYDs1TIoAbEaOUJ4RQUOa2wb0sKw++a4fAca7zQWU50ntWVlpwwVVaTshDnQs/bsTLhY6q5TMopGgeimi1FHicfyiI69QKtm8wViGGpqY05LGwOBw8XkVx9qsRe8KSooq2KkASL+lO4YDgj0QVnwlx1kscB5PYcrHXGg1wbmWAKAVnNPn4h1ewFmUyw4ipjnKY8WfppJm95sSHIj/tLAR/6oZArmK/4MuljYs7ah9vD/QuInxfhzzjj5uDvYRmY/NBz1FrNBVaqOT7U3/8rN+rLYmzKMbP9wnBmMsl4qs9gq1tmD/vQs4h5s11+pqPGt601G8zufG82G3mTgR/g5IYnvuffrIlPsGJd2H77Y47mZ4tfDoZuD5ENdMYwj4u2wHVil+256EM5YHHzDsStNJ2l7QoQ0+UrUMKFtJVXE3bibhL2D2Q9D6JqTvZGahOdfwcPMInyS4/bsxWb/wA234PFnUyCYBKMp8PGhzMS0mkQTvCUDBvfreCJzWKc3fjFE9sixutyYR+Pw5jYQ0vFBDzLIqcM/V6J2qXTQhJICe9csk0IKH1zUVS3JmTwpIZUWhNpieAyxRraUC3JBJsmpSOsEVdIwW310ZVE3J6qNaOH1jJHca40pGkY2YBvo7ONni931g42ev6oV14EmMcHcLy7EeDG2DjytWxhp4KBNx1A1s9LY6c+HKsL4uNJh3G5h8S6V8muXoufgttJllv0LaqgJW+4m7yyFXXAa7Ue9/lC8FI8boQLHvPCECWdx7c93ekp5m7YiJCW7Y/wi2ePzStDz+ddJYcYevRjreTV0S/O0d7On9FssuGj4NiW3mP3ytJvtzwdHGzq8aup/yemHu+2FdkwksqDPxnRLWMvLs/QW/ABiRjtmnxr9MAvJd9XVhl+Uet6TOshxp+8fj35z31/fJPjnVYKB5uvpaTrlsOvc9cdkhQZzT9pnqxjwjIpdQCFuSkG6bVzXaYx82+R+R8JsTvCGJgIGQQ0j1m5zJu0zOuiYrc5eJnDmNqjEHUTKcvQqYulKdKx2GLp16v3lw1J0ye2kMl4PJy8svTkHpKu6IBmMk3t2Y7cR77+DR+c5e74GAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=098bb079c3d04f10d036f0477d013133"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="KYC Process flow">57bfd2b3c3c88310d036f0477d013171</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-11 18:36:02</sys_created_on>
+        <sys_id>172d367fc38c8310d036f0477d013110</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="BANKING KYC">a06651b3c3808310d036f0477d0131f0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 09:39:49</sys_updated_on>
+        <ui_id>34a6bf08-b2ed-42e2-ad67-4b29bb66237b</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1TXW/aMBT9K8jPKEqAosJbBUOa1rVSqZCmtrIc+6ZYOE5mOxSG+O+7SRxglFVU6sMqLW/30+ec3POwIVKQIemBCKNB1OfdqNvthGHnshfF/W4cdUSXAUSkTTRLATsN8MwIjJdMFWVisxkZYA4EjQJeGAPabbdYF9Lmiq1nvg0zfC6VwDoZPjy1Sc4MbnRgyHBzVDoXkmIxKGy9azAdY3TrvIxFxosUcVHZJK/95NhXWl/HWMGhEk4UtgmsHGgBCCRhykKbpEwL5jKzJkNnCkwgaXGr1XrXMZfa1URTtrLyF77cC8u+BJAZ9yLsQuoFqtPJmDk2xc3cFWanVyY52FoTAQkrlBsd5uqG29zJTNcjjsWqmc5UkeqbWhGyW3DwPwqLICAveZbIa1rJdJ693DUgJ1JXkniKKuNM7SLmnJFx4Uo4GwIKKo1TludSP9PcZEtZDSOUNHhWGASJyl7wTSufdcB4iTtAVVkwwfy4Ss+YkSWJ77gGh7dtYtd2pJi1eyqoIf1ZlEhqYp4CrVSoJKDVJZTD3MjcXeFTS/DAt21/9GHnzQuD/UFVt24Pjt5Iu6AKlqAeizDsCoT/+uRPN73PBWdgbFwwkaCEPQHau8BBiugc0JrEn0a498XWzBd3XvgwM0T9sPr+W+LftUR88da58cH+ug527m2xotFg0Iv6HRozvZCaRnSx5pQzC6/t8e3HqDW6mn55tyfOANl44r76+adBN7Y4zl0fzrZu6oK3w8WHueHyM/nA0/j0Rvjb+T/9BuUiA7gICQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=172d367fc38c8310d036f0477d013110"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="KYC Process flow">57bfd2b3c3c88310d036f0477d013171</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>a04a304b-1589-46bf-b655-1928920e0f88</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-14 03:50:50</sys_created_on>
+        <sys_id>295f8f2cc3d80710d036f0477d01311b</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="BANKING KYC">a06651b3c3808310d036f0477d0131f0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 09:39:49</sys_updated_on>
+        <ui_id>20143ea3-021a-4858-be42-cf8730723af3</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2Xa2/aMBSG/wrKZ8ocQtLQbxWs0u5SL5Omqooc+4R6M06WOFsZ4r/vJHYIg47SlUrt1C8IH99eHz+vY1/OHcGdIwcGgefjz2HiEbfvkhCCMGRDQlkYBP7Ac7qOolPAljTL8vQHlVEOtEgVVmChrGrwLxdFJunscxth10LyHJRzdHnVdTKa4ygacudovla1qwxJY5DY9Njq6Jw2Ov4qUM+yqqLQuVATW35vhzlrgmnOK1n9rgM3GhQH1JNQWUDXmVLFqU7z2TKCQ/NPSraBa6G0WfCU3hTiF87nBqRqmAAukdlsLIuRzZQJJ2OqKSopmS7zZeJSwaAwyeGQ0FLq0WrMNPiUaYGLrLtoGsumdyrLqfpoMuIsB1jZmLJAEZBVK62k23UkZ9fpz9NG5YlQdVJspUwZlcsS1Zi6uNSVnrlTivO1LJvIRp5BwhRnjKa4TxiJqs0S9SwoetqbSCz0Epn+RHWFmKgeZdUKe7gDtHeC8XEd/kxzUS33Aw6DnavpLpT4XsKbiqOgHwdDEvIDnpD4YBB6/gFlQA4gcH3wecB813MWXaeYFSNJi6JNFO5Q9L2slmnSZhMUmRxXXVguMn2Mon6AzcWia11E3KQPw2GfxC4hHiGhz0joQewdBoce5eEtkCYCJN+viXZQsWGiEyvjb/KshepiVDf600Z1/85HU7F3K4WEPCcv4eQPsdLjOOT+tJsU3IE82wobrHw4vqZlrh6H+B1ENMS/NSrWgV8X9y+8ey+8//+8H4bbUGOkRSoHhmCsgD6fj3DzNfDI7bEyxzTpxWIP9O8gqaH/tNG0rtHyzlNW1nsh+BrwY1vTeTNuiSfbiTdc7AK813/B/UnizvxtbCXDFiVeYpKQ7j2f7HfP37A9LqEzNgI2JTVPAHYNvJQmHGmxca6f2Qb1SK/Oxer57u/tfB88p9P9oS+Dx7vwR801taIZTfkIN/rBVv5gBbbllZmliotqBcWKFcxFG4pjNbu4vOVD0Ft2n+RpmfWQKzqBfLG42jTRg8a6n/12WP7y04KuKe5Kh7Vh+0S3nVYt2D7sbaW132BfH5tndrt6mv7bv9VitvUaw1q2TDZbc91E7nA4cIN+FFP1TajIjb7NWMRoAZvuefdl1Bkdn72+txd20Nd44dwKXNNr6a+Ltz0q6m5rjwr3nh8dY4NbqX9h/skwf/Ubl4+MRngVAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=295f8f2cc3d80710d036f0477d01311b"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="KYC Process flow">57bfd2b3c3c88310d036f0477d013171</flow>
+        <generation_source/>
+        <order>7</order>
+        <parent_ui_id>e88201cf-4e77-4aa8-8296-ee5f68ba838b</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-14 04:03:38</sys_created_on>
+        <sys_id>85421be0c31c0710d036f0477d0131f9</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="BANKING KYC">a06651b3c3808310d036f0477d0131f0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 09:39:49</sys_updated_on>
+        <ui_id>7890021b-9842-4c55-b202-1e3f1dd58ce8</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Xa0/bMBT9K1U+l85pHk35htohsQdIvKQJocixHfBwnRI7jK7qf99N7DRdC6WMIsHEl6q+149zj89x7Iupw6mz6zA/9AL46aUecrsuilgYRaSPMInCMPA9p+1IPGLQE4/HeXaHRZwzrDIJCWgUZQb+Uq7GAk/Omwi55oLmTDq7F5dtZ4xzmEWz3NmdLqU2hSFwwgR03bM4Wsc1jkcB6sm4TCidc3ll29/sNCd1MMtpCavbdti9ZpIywJNioVjbGWFJsc7yyTwCU9MjKZrANZfaFDzC94r/hvXcEJUdUwYlEsvGvBlbpkw4HWKNAUlBdJHPics4YcqQQ1mKC6EHizHT4WisORRZDdE4EfXoTBQjeWgYceYTLGxMoQAEG5eVltBtHenJdfbruEa5z2VFik2KjGAxb2EN1CWFLvFMnYKfLrFsIis8M8FGsGI8gn2CSFxuFq9WAdCjzpWARicV2S9Ap/iV7GBSVtiBHcCdfYgPq/A5znlZ7neYBgaXy51Jfluwg1JHYTcJ+yiiOzRFyY4fecEOJgztsNANWEBDErieM2s7aqIGAivVEAU7FN8WZZmGNktQbDguh5Ccj/UegLpjlotZ27oIuWmX9ftdlLgIeQhFAUGRxxKvF/Y8TKMHRJpyJuh2TbQBihUT7VsYj8GzFqqacdXpbxtV41uHJrF1K0UIvScvweIvsdLrOOT5ajcUPCF5slZsbOHD8TMrcvk6it8ARK34LwbFsuCXwf2L3r0Pvf//eu9F66RGUCOpnBEQxoLQp9MBbL5mNHY7pMiBJj2bbUH9G0Cq1X9cY1rGaPVOM1JUe8HpkuCHNtM6GDaKR+sVb3SxieC97ofc36TcSbBOW2m/kRItgCRQ95ZP9qfXr7U9LFhraACsQqqfAOSa0UKYcKz5yrl+YjtUM3065Yvne7C1891/T6f7S18Gr3fhj+traqlmMOUr3Oj9tfpjC2KbX5lJJikvK1ALVjAXbab25OTsYjpVGmtOOl0fRRgnKfFIFHkuosgLU+T3ehS5nkvxbHa56qGXTPU8821Q/PzDAp5RT5FhTdg80O2gRQM2z3qbtObzt/WpeWd3q7fpvu0bLSFrLzGk0ZZhs7HWfez2+74bduMEyxsuYze+mZCYYMVWzfP1x6A12Dv5/GwvbICv9sKpBbiE16q/aj70pKiGLT0p3Gd+cowNHlT9h+bfjOYv/wDy4dqBdhUAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=85421be0c31c0710d036f0477d0131f9"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="KYC Process flow">57bfd2b3c3c88310d036f0477d013171</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-11 18:30:47</sys_created_on>
+        <sys_id>d6fbfebbc38c8310d036f0477d013154</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="BANKING KYC">a06651b3c3808310d036f0477d0131f0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 09:39:49</sys_updated_on>
+        <ui_id>67ecf4e9-863f-4936-9fcd-ee5752f54932</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Y227bOBD9FUHPXle+x3narLNBg00bIDa6KJpCoCjK4oYSVZKKow3y7zuUKEu+wLHWDpoCfjOvc2Z0zsyY355t6tvn9mB85gy9oI9GTq/bc5yz7njs9caBczYaOx0f2S07RhGBnSh0FYfhI2KpHkuv2xl1R2fO7/MIUdbGPIJVn8qEoezLzk04pMwXJLbPv31v2QkSYEERYZ8/ry3tC5EhjzDYOuObeFWW5EiUoPHcjG/M/mk5yYWv7fdaNnlSJPYJGA4Qk6RlRyj2keIis8+VSGFCEOTfxiyr7XiS9F8wcuY4jl4PCHiAtVW7NnRNbIrp4BIpBPZTrFJhtuKQU0xk4btPApQyNanPFRtuE0V5XBxRyGPlac7SKP5ceG8vLyg/BcykEkCQRPsXqyX8YBryxV2J8orGeSjMIuMYseUIKQiYlyqN59kmjERwkRuhJIEwuongjzQ/DFii9pzBoB0wvgCjks7jNsIaeBvCidpXMH+ZT39BgmovPsE1cFgDZzSiOSFsHXL7pWXLTE4YkrJyD+Lq/kg1uMJZ45ZbREYfwYIm6gJsPhLjwUvL0N4ZDj1v6A1GvYpTYxz4Iy8YohHuVTRaIAASIfHgEs3gmgA6m3TP0Tbl9x5YSn5fx5ilPrH+LkHtwmmI73HOCIrXmD8DpB+udEwq9nd3s9/MbNA/pJpMdsFKS3ELviPLLGQtIelJFRIrRwa/kLKotCR8rbY14xY1XtVOtKyMp1aUSgXbFKwoJObwQxAMYNt2TXT99ys5Qwcze7mVK7+EJo8vwI6/K6mT4Uoe9zCu6W5Tdo0lt4f1UnJ/TCZbsDQpKoP/J6tTVfnlqkp/J62wXxGpyGM1Uj8/T4ABivhup41TAUFTLy9HYPoekJbNU5Fi70po61AN532O0/wDUX+N+Jdmxbq+rNjvHFRULqTkmEJcZK2ALKgKoSRsqQW97qpQoLLQnJXbBXNdLb8D4RTdZQPdBFOCBA6vKGH6U8dp5OVMX9UThuov3DUmm+LzXqpFHjY3J9wrEkM7+Rx0V3M197Oaxu5Tx+nhxNLof1M0ziJMBOfKg7A+5Iv+vX1fbCMfCWO8VRz5kBRz93GjK77yVFh/fZ0AU3+kBFqZEEnLIyS2cKF1S6YYyCSDlLGsfZCtWzClCIpAHIyBwUdKFrqHElapV2i4Qi7UoYZmIYof9M1r12zmKnPtHuE8ZriOFo5X3W2WiPcg7rLlKGi7wWOTgEMVsbXM+3H26aZKuaMDG47hYNAbnjqOgzuOZOF3fcGTxPj2Rl1HZ/f7SL+iUi3NVlnxye2Mx/3OsOt6QHUaux33IcMuRnKLprU8JxfTP5t33K+DrPoQHa7toI0ENuZu6metz8WCkUOnoRyKOmwakBl0HSv/PS1l4NX685NWDtYKlW7BceNbbvwNxDLY/c8Pr+RdmXr/EKxqYtH8vzPlyTTs20Wyuanho+frOEu9TJcotyFv8k91eHr+/OlSOD7l/Z2plzgrxDn2S8sexkserz20NH5n6Z/eWX4+fd/0neX7fwpU81O2GgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d6fbfebbc38c8310d036f0477d013154"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="KYC Process flow">57bfd2b3c3c88310d036f0477d013171</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-11 18:28:13</sys_created_on>
+        <sys_id>e86b3e7bc38c8310d036f0477d01318a</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="BANKING KYC">a06651b3c3808310d036f0477d0131f0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 09:39:49</sys_updated_on>
+        <ui_id>b6e34606-65e1-4eb3-bac0-0fba2f618311</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1TXU/bMBT9K5WfqyhpS0X7htohTWMgAUKaAFk39i1YOE5mO0BW9b/vJnHarusQaDwMaXm7nz7n5J7rJVOSTdkIZZxMkrEYJsPhII4Hh6MkHQ/TZCCHgJiwPjOQIXVaFLmVFD+CLuvEcjmzCB4lTyJRWovGr1ZUl8oVGqqr0EYZca+0pDqbXt/2WQGWNnq0bLrcKb0WkoYUNbWed5h2MfqqqGOZizIjXFx1yZMwOQ+V3uc5VWiohpPEfYbPHo1EArIA7bDPMjASfG4rNvW2pASRlmdGV+uOe2V8SzSDZ6d+0MujuO5bIDETQYR1yINAbXoxBw8XtFn40q71ypVA12oicQGl9rPtXNtwVniVm3bEQ6q76VyXmTltFWHrBVv/o3QEAouaZ428pbW4uM+fzjuQx8o0kgSKOheg1xF4b1Va+hrOkqHGRuMMikKZO17Y/FE1wwQli+40BdFC50/0plN3JgJR445IVYiOKT9v0ldgVU3iK62h4VWfucrNNDi3oUIa8u9ljaQlFijwRoVGAt5cQj0srCr8ET31iAH4qh+OPh68eGG4Oajm1t3W0RMcwko3DwZ05fxNGcdDuccK0W7nPm/85ba3+eoVrDtfHSvU0u2RIfjKY0Y0PPJWll+tdRmKvatQXLvr3eyVjOPm+2+yf9dk6cFL5yYmm+va2rkx2jNPJpNRMh7wFMyDMjzhD5XgAhz+7qMv32a92dHFpzd74hUgO09cNj9/P+jOFru5k+3Z3mlbCHY4eDc3HH4kHwQaH94Ifzr/2592lwXwWgkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e86b3e7bc38c8310d036f0477d01318a"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=57bfd2b3c3c88310d036f0477d013171"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=57bfd2b3c3c88310d036f0477d013171^sys_idNOT IN0e8e07e8c3d80710d036f0477d01316b,7c84b87dc3904f10d036f0477d013152,8e915f60c31c0710d036f0477d013149,c295b8fdc3904f10d036f0477d013154"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">868e07e8c3d80710d036f0477d01316b</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="KYC Process flow">57bfd2b3c3c88310d036f0477d013171</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-14 03:47:18</sys_created_on>
+        <sys_id>0e8e07e8c3d80710d036f0477d01316b</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_scope display_value="BANKING KYC">a06651b3c3808310d036f0477d0131f0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 05:36:45</sys_updated_on>
+        <ui_id>a04a304b-1589-46bf-b655-1928920e0f88</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXW/aMBT9K8jPKEpIQStvFVOlSV2rtVVfts5y7Bti4diZP6AM8d93nQ+KBtOqaXvbGz6+H+fce0x2xATfBO8ezZVzcqnJ/PPzmEgdMfy9I5rVQOaEGy2kl0aTMVkzFSK22y0sMA+CZgkP1oL2iZVuRRWsQe33X0Ka5kKZzdfbT2+LrUHIUGMLIV2j2Pbp33filVQCgzrhDbOo14Ml891PV37bAFWsAIWEHryVeonpUuDpkk3LaZZOeT6Z5ZM0nby7yIpZXmQTkTO4mGHckLg4muOZ0cYmCLmhvLEicpmkYwIvHrQA7Fcy5WBMaqYF88ZuydzbgADKFndabQ8RldQeq5EY++Lkd4iV0jRGloDCOHS3hyPt597BvDKSw13TcmsRzwrV53CjQq1vOwlxY1CyoPywMUSCw3rQRNKRRs+pfKjM5n5oeC11K7C/VIYzdTgxj2MoggcXtwEKaixEa9Y0OBzaWLOWbTJyqZOlwkNSogewaXRywngknuCMWHKN+PsWfmJWRhUfsQwm4wYdddzKZtDWNif7dir0W4h8On29EtoNAwO6tCtss4ae9H58+mJoC7w+m0UFfDW6R0uObqIlT+1+JuJv2LRMWZld8uy8TVl+zqajmxY5Neug6heOzX7j2B55k2Wn0/+OPXZspFkwJzlt/6exXHz/f2zZ52jNroXrPCSAS4dMHiP2YfgWxIstbl3yY2hj7CpqeMX2PwBMpRiRVQYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">7484b87dc3904f10d036f0477d013150</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="KYC Process flow">57bfd2b3c3c88310d036f0477d013171</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Wait for a duration of time">fdb2541473031300b61e66476bf6a70e</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-17 13:46:47</sys_created_on>
+        <sys_id>7c84b87dc3904f10d036f0477d013152</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="BANKING KYC">a06651b3c3808310d036f0477d0131f0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 05:36:45</sys_updated_on>
+        <ui_id>baeaf464-9564-44ea-abb4-21f22c656c8b</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1YS4/bOAz+K4bPaVbyM8mt6GyBHrpdtEEvRWHIMp0Iq9heP2YmHcx/L2XLjp3YTWcm7bbbAjlEFCV+JD+SSu7MtCqzqizW6fOiEJvEXH34ODNFomT4/c5M2A7MlVmKHeRBDpKV4hqCqMrxS5oEaQb4Lc3NmXnNZKVUWVyCWkeiyCTbvz8S862QUQ7aUsZyNKB2VndHW+U+g0CyECSefrFNBQc8LiJcRZw5lLiObxOb2oSEHgXPc3wvjD3mWx7qtQfXCrjRAjda4EYP+Ne7qCChJm/BpHmkkCOCmQm3JSQRILyYyQJm5o4lkTq37yQ5sOhNIg+CrUhKvM9UyreF+ISXO0TpxYBh4NDsdctAh7QRNyiaLLXetkE+zoUGSu5nB90Q4jSHnnIn0Nr0HrMQQcwqWb54uDH6IGOWMta49CZTcUcdW4WchVLHgaey2iV/NdkyO2jHBNPiq3H6VQWGETKVKhX7Mq8wD/G7bXrztg3zS5HUkHSSZMqZ7FasLHMRVqWKxZ0JEnZ4T7BjWSaSTZDl6bWoDyPa3XwjcTGPZXqDNlV5zRlXvs2RGGz+EuVXtfg9y4Xy8zVeo31oEPJ90AbshJhDNU3NA+nua+IE/1YKvNlTLoM6uB2/65OoXfBcZOVzroxod1UGB9XRs93iokufPCMUPwYhK0JXhJwWPzVeiwSD9uj6vzoYrjsAxNRxOZ3oACH0OkDv6JQvOnh1uvrylpv/YX13xfCgWjglukb0wzFdFEFDPO1bbfwsec/zdUjvA13hNpOCi3JQRkOy/qlVjJ7KJaaWs/RtdzHF2YU7wllj3aCfcGpiHtEfZh6NhfJLmRibU2+PZ3fvjrGmODZ+/oacI3nYZvSWrNsdK/4zU/CRLtILuGhdyEX7ybN3tKpG5/BYuH6KVvX0ljT1wES7oPZ66TptSo+fnHj7H+vm+roN0dhyo8nHs29/4fGMVxka6df7NByuKA/0hmaf8z+Yrk98Ro4Pwdkv97ws+BaiSvYrwV7EzHMg4oQtCPWQLLHDXN9yQuLYTrg4rRTLMW4N/9H10uWvrZc4dF18bE7Ui2cNxzamySi3YMSpxPirVc+pKWd1dPOeaV0c7gWLw7aGxcF3SR/EWKG8O2z/Cs/Rp/f43pxtslz/lfK9W3wY08ijHg1927OQsrbDPQ7eEoBStrRIj7K9Z0MN2KgBj7X6866d6/SXfJfWd/3+IfXtf0g1uT4k/9tQ+FVSwqbxQxF4QWzbJkvu2n5H4CgCiGM/pBbQUQIfN9gBZs1N0dn5zcmfjZMfFfMaC0VDoQi4KBDIWsletX9aq409MkHwvugmzf9RLhxk958BDLdRM/4WAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">0a915f60c31c0710d036f0477d013149</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="KYC Process flow">57bfd2b3c3c88310d036f0477d013171</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-14 04:00:42</sys_created_on>
+        <sys_id>8e915f60c31c0710d036f0477d013149</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="BANKING KYC">a06651b3c3808310d036f0477d0131f0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 05:36:45</sys_updated_on>
+        <ui_id>e88201cf-4e77-4aa8-8296-ee5f68ba838b</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1UXWvbMBT9K0HPwdhxE9a8lYyywbZCW/qyFSFL17GILHn6SOqF/Pdd+SMNS8ZG2ePerKP7cc69x9oTE3wTvHs0N87JtSbLr89TInXE8HtPNKuBLAk3WkgvjSZTsmUqRGy/X1lgHgTNEh6sBe0TK92GKtiCOhy+hTTNRSXXFSYJ6RrF2qe35PJKKoEhPbmGWeTkwZLl/pcr3zZAFStAYYsHb6VeY7oUeLpm83KepXOezxb5LE1n766yYpEX2UzkDK4WGDcmrk60XpAfmyDkxvLGishllk4JvHjQArBfyZSDKamZFswb25KltwEBFC3utGqPEZXUHquRGPvi5A+IldI0RpaAwjj0t8cjHSbZw7wyksNd03HrEM8KNeRwo0Ktv/QS4g6gZEH5cQeIBIf1oImkI42BU/lQmd392PBW6k7gcKkMZ+p4Yh7HUAQPLm4DFNRYiNasaXA4tLFmK7tk5FIna4WHpFRmh02j2xLGI/EEZ8SSW8Tfd/ATszKq+IxlMBk36KjjVjajtq45OXRTod9D5NPrG5TQfhgY0KfdYJstDKQP03NX0w54tfaqAr6ZfED7Te7Rlef+PQ/4FyYtU1Zm1zy7bFKWXzLp5FOHnFt11PQbv2Z/8OuA/JVh5/P/fj31a6RZMCc57V5SLBf//jcb9jkas2/heg8J4NIhk8eIfRxf63jR4tYlP4V2xm6ihlfs8BMeCRXp9wUAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ca95b8fdc3904f10d036f0477d013153</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="KYC Process flow">57bfd2b3c3c88310d036f0477d013171</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-17 13:51:31</sys_created_on>
+        <sys_id>c295b8fdc3904f10d036f0477d013154</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="BANKING KYC">a06651b3c3808310d036f0477d0131f0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 05:36:45</sys_updated_on>
+        <ui_id>5adfd11d-d5b7-4dd5-8106-4dddc2fea317</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1UXW/aMBT9K8jPKEpIQStvjKrSpG6VRtWXrYoc+4ZYdWzPH1CG+O+7zgdFg2nrtMe9xed+nXN94j3RwZvg3YNeOCfWisy/PI2JUBHD7z1RtAEyJ0wrLrzQiozJhsoQsf1+aYF64EWWsGAtKJ84j8Dh8DWkac61gZjPhTOS7h7fWMZqITlGO0qGWmTiwZL5/qeQ3xkoJC1BYveVt0KtsVxwPF3TaTXN0inLJ7N8kqaTd1dZOcvLbMJzClczzBsKlycKL4iOQxByQ3tteeQySccEXjwoDjivotLBmDRUceq13ZG5twEB1MvvldwdM2qhPHYjMffFie8QO6VpzKwAhTHoosdj0S+xg1mtBYN703JrEU9L2dcwLUOjPnUS4vqhokH6Yf2IBIf9wETSkUbPqVrVevt5GHgrVCuwD0rNqDyeqMc1lMGDi7cBEhpsVDTUGFxOYazeiLYYuTTJWuIhqaTe4tDosYSySDzBHdHkFvGbFn6kVkQVH7ENFuMNusIxK8ygrR1ODu1Wim8h8un09UqKbhmY0JUtcMwGetKH8bmXixZ4NfSyBvY8Wt0tRu/xxlh97t0LGf/CplVKq+yaZZdtSvNLNh3dtci5WQdVv3Bs9hvH9sgfWXY6/e/YU8dGmiV1ghXtC4rt4v//15Z9itbsRrjOQxyYcMjkIWIfhlc6BnZ464KdQlttn6OGV+zwAwHl8TjvBQAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=57bfd2b3c3c88310d036f0477d013171"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=57bfd2b3c3c88310d036f0477d013171"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_57bfd2b3c3c88310d036f0477d013171</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-11 16:54:25</sys_created_on>
+        <sys_id>76e5eebfc3c88310d036f0477d0131b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="BANKING KYC" source="x_1994162_bankin_1">a06651b3c3808310d036f0477d0131f0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BANKING KYC">a06651b3c3808310d036f0477d0131f0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-11 16:54:25</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_57bfd2b3c3c88310d036f0477d013171</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-11 16:54:25</sys_created_on>
+        <sys_id>b6e5eebfc3c88310d036f0477d0131c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="BANKING KYC" source="x_1994162_bankin_1">a06651b3c3808310d036f0477d0131f0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BANKING KYC">a06651b3c3808310d036f0477d0131f0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-11 16:54:25</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_57bfd2b3c3c88310d036f0477d013171"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_57bfd2b3c3c88310d036f0477d013171"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>kyc_process_flow</internal_name>
+        <label_cache>[{"name":"67ecf4e9-863f-4936-9fcd-ee5752f54932.email.user","label":"2 - Send Email➛email➛User","reference":"","reference_display":"User","type":"string","base_type":"string","parent_table_name":"sys_email","column_name":"user","usedInstances":{}},{"name":"{{static.2408aabfc3c88310d036f0477d0131da}}","label":"Abel Tuter","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","choices":[{"order":0.0}],"usedInstances":{"9ad80405-ba24-48c2-9a6e-e97fb7e7d0e5":["approval_conditions"],"8384903f-18b7-478d-9f11-ed05a187057e":["approval_conditions"],"17ebf4d2-142a-4d77-a92f-6c62a27206fd":["approval_conditions"],"7890021b-9842-4c55-b202-1e3f1dd58ce8":["approval_conditions"],"ab036774-73fd-4687-978e-114ff93192d7":["approval_conditions"]}},{"name":"Created_1.current.state","label":"Trigger - Record Created➛KYC CASE Record➛state (state)","reference":"","reference_display":"state (state)","type":"choice","base_type":"choice","parent_table_name":"x_1994162_bankin_1_kyc_case","column_name":"state","choices":[{"label":"-- None --","image":"","used":false,"reference":false,"rawLabel":"-- None --","selected":false,"missing":false,"value":""},{"image":"","used":false,"label":"open","reference":false,"rawLabel":"open","selected":false,"missing":false,"value":"open","parameters":{"name":"x_1994162_bankin_1_kyc_case","dependent_values":[""]}},{"image":"","used":false,"label":"in progress","reference":false,"rawLabel":"in progress","selected":false,"missing":false,"value":"in_progress","parameters":{"name":"x_1994162_bankin_1_kyc_case","dependent_values":[""]}},{"image":"","used":false,"label":"closed","reference":false,"rawLabel":"closed","selected":false,"missing":false,"value":"closed","parameters":{"name":"x_1994162_bankin_1_kyc_case","dependent_values":[""]}},{"image":"","used":false,"label":"not closed","reference":false,"rawLabel":"not closed","selected":false,"missing":false,"value":"not_closed","parameters":{"name":"x_1994162_bankin_1_kyc_case","dependent_values":[""]}}],"usedInstances":{"5adfd11d-d5b7-4dd5-8106-4dddc2fea317":["condition"]}},{"name":"Created_1.current.assigned_analyst.sys_import_state_comment","label":"Trigger - Record Created➛KYC CASE Record➛assigned analyst➛Comment","reference":"","reference_display":"Comment","type":"string","base_type":"string","parent_table_name":"imp_user","column_name":"sys_import_state_comment","usedInstances":{}},{"name":"{{static.62826bf03710200044e0bfc8bcbe5df1}}","label":"Abel Tuter","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","choices":[{"order":0.0}],"usedInstances":{"d27a4157-bf42-493b-8e31-06dbe1e47056":["approval_conditions"],"c18c6fd7-f4e9-4457-868c-7a0337f3a9b1":["approval_conditions"]}},{"name":"Created_1.current.approval_group.manager.manager","label":"Trigger - Record Created➛KYC CASE Record➛Approval group➛Manager➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager","usedInstances":{"17ebf4d2-142a-4d77-a92f-6c62a27206fd":["approval_conditions"]}},{"name":"Created_1.current.case_type","label":"Trigger - Record Created➛KYC CASE Record➛Case type","reference":"","reference_display":"Case type","type":"choice","base_type":"choice","parent_table_name":"x_1994162_bankin_1_kyc_case","column_name":"case_type","choices":[{"order":0.0}],"usedInstances":{}},{"name":"Created_1.current","label":"Trigger - Record Created➛KYC CASE Record","reference":"x_1994162_bankin_1_kyc_case","reference_display":"KYC CASE","type":"reference","base_type":"reference","usedInstances":{"34a6bf08-b2ed-42e2-ad67-4b29bb66237b":["record"],"d27a4157-bf42-493b-8e31-06dbe1e47056":["record"],"62a1288d-3d7e-4555-8959-a44d7eed82fe":["condition"],"70207bf0-e583-4eaf-a54f-36ee9d0be606":["record"],"17ebf4d2-142a-4d77-a92f-6c62a27206fd":["record"],"67ecf4e9-863f-4936-9fcd-ee5752f54932":["record"],"c18c6fd7-f4e9-4457-868c-7a0337f3a9b1":["record"],"9ad80405-ba24-48c2-9a6e-e97fb7e7d0e5":["record"],"0ec5575f-5fa8-4cba-89b1-7aa5abdb1883":["record"],"20143ea3-021a-4858-be42-cf8730723af3":["record"],"b6e34606-65e1-4eb3-bac0-0fba2f618311":["record"],"8384903f-18b7-478d-9f11-ed05a187057e":["record"],"e9585694-8317-4df8-b5b7-a9bdf35ef2a7":["record"],"7890021b-9842-4c55-b202-1e3f1dd58ce8":["record"],"079e6e34-aa76-48cc-9ec6-02800ffa9033":["record"],"b503b1b9-4338-4558-9e3c-78d4a6c45b8b":["record"],"ab036774-73fd-4687-978e-114ff93192d7":["record"],"771491af-47ed-407e-98bc-aabddc8d0f82":["record"]},"attributes":{}},{"name":"Created_1.current.assigned_analyst","label":"Trigger - Record Created➛KYC CASE Record➛assigned analyst","reference":"imp_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1994162_bankin_1_kyc_case","column_name":"assigned_analyst","usedInstances":{"0ec5575f-5fa8-4cba-89b1-7aa5abdb1883":["record"],"b6e34606-65e1-4eb3-bac0-0fba2f618311":["assigned_analyst"]}},{"name":"Created_1.current.customer.email","label":"Trigger - Record Created➛KYC CASE Record➛CUSTOMER➛. Email","reference":"","reference_display":". Email","type":"string","base_type":"string","parent_table_name":"x_1994162_bankin_1_customer","column_name":"email","usedInstances":{}},{"name":"Created_1.table_name","label":"Trigger - Record Created➛KYC CASE Table","reference":"x_1994162_bankin_1_kyc_case","reference_display":"KYC CASE","type":"table_name","base_type":"table_name","usedInstances":{},"attributes":{"test_input_hidden":"true"}},{"name":"Created_1.current.assigned_analyst.email","label":"Trigger - Record Created➛KYC CASE Record➛assigned analyst➛Email","reference":"","reference_display":"Email","type":"string","base_type":"string","parent_table_name":"imp_user","column_name":"email","usedInstances":{"67ecf4e9-863f-4936-9fcd-ee5752f54932":["ah_to"]}},{"name":"Created_1.current.approval_group.manager","label":"Trigger - Record Created➛KYC CASE Record➛Approval group➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user_group","column_name":"manager","choices":[{"order":0.0}],"usedInstances":{"20143ea3-021a-4858-be42-cf8730723af3":["approval_conditions"],"70207bf0-e583-4eaf-a54f-36ee9d0be606":["approval_conditions"],"e9585694-8317-4df8-b5b7-a9bdf35ef2a7":["approval_conditions"],"079e6e34-aa76-48cc-9ec6-02800ffa9033":["approval_conditions"]}},{"name":"Created_1.current.approval_group","label":"Trigger - Record Created➛KYC CASE Record➛Approval group","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","parent_table_name":"x_1994162_bankin_1_kyc_case","column_name":"approval_group","choices":[{"order":0.0}],"usedInstances":{"0d55da6c-d253-4139-a798-bbdcd35c7bcd":["condition"]}},{"name":"Created_1.current.risk_level","label":"Trigger - Record Created➛KYC CASE Record➛Risk LEVEL","reference":"","reference_display":"Risk LEVEL","type":"choice","base_type":"choice","parent_table_name":"x_1994162_bankin_1_kyc_case","column_name":"risk_level","choices":[{"label":"-- None --","image":"","used":false,"reference":false,"rawLabel":"-- None --","selected":false,"missing":false,"value":""},{"image":"","used":false,"label":"low","reference":false,"rawLabel":"low","selected":false,"missing":false,"value":"low","parameters":{"name":"x_1994162_bankin_1_kyc_case","dependent_values":[""]}},{"image":"","used":false,"label":"medium","reference":false,"rawLabel":"medium","selected":false,"missing":false,"value":"medium","parameters":{"name":"x_1994162_bankin_1_kyc_case","dependent_values":[""]}},{"image":"","used":false,"label":"High","reference":false,"rawLabel":"High","selected":false,"missing":false,"value":"high","parameters":{"name":"x_1994162_bankin_1_kyc_case","dependent_values":[""]}}],"usedInstances":{"e88201cf-4e77-4aa8-8296-ee5f68ba838b":["condition"],"a04a304b-1589-46bf-b655-1928920e0f88":["condition"],"a017007e-86f8-414c-bbcc-a260cc28f168":["condition"],"cb61c0fb-1cc6-4d00-aece-114d17ae812d":["condition"],"895934eb-42fc-4e3a-9398-f387ac03f65e":["condition"],"58fefaa5-1e98-4e87-b29a-d74435701004":["condition"]}}]</label_cache>
+        <master>true</master>
+        <name>KYC Process flow</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="KYC Process flow">57bfd2b3c3c88310d036f0477d013171</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-17 14:14:38</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2cea74b9c3d04f10d036f0477d0131a0</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="BANKING KYC">a06651b3c3808310d036f0477d0131f0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 05:36:47</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=2cea74b9c3d04f10d036f0477d0131a0"/>
+    <sys_variable_value action="delete_multiple" query="document_key=2cea74b9c3d04f10d036f0477d0131a0"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=2cea74b9c3d04f10d036f0477d0131a0"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=2cea74b9c3d04f10d036f0477d0131a0^sys_idNOT IN68ea74b9c3d04f10d036f0477d0131a2"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>2cea74b9c3d04f10d036f0477d0131a0</id>
+        <name>KYC Process flow</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-17 14:14:38</sys_created_on>
+        <sys_id>68ea74b9c3d04f10d036f0477d0131a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-17 14:14:38</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=68ea74b9c3d04f10d036f0477d0131a2"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=2cea74b9c3d04f10d036f0477d0131a0^sys_idNOT INa8ea74b9c3d04f10d036f0477d0131ba,ecea74b9c3d04f10d036f0477d0131a4"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="KYC Process flow">2cea74b9c3d04f10d036f0477d0131a0</model>
+        <model_id>2cea74b9c3d04f10d036f0477d0131a0</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_2cea74b9c3d04f10d036f0477d0131a0</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-17 14:14:38</sys_created_on>
+        <sys_id>a8ea74b9c3d04f10d036f0477d0131ba</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="BANKING KYC">a06651b3c3808310d036f0477d0131f0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 05:36:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a8ea74b9c3d04f10d036f0477d0131ba"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="KYC Process flow">2cea74b9c3d04f10d036f0477d0131a0</model>
+        <model_id>2cea74b9c3d04f10d036f0477d0131a0</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_2cea74b9c3d04f10d036f0477d0131a0</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-17 14:14:38</sys_created_on>
+        <sys_id>ecea74b9c3d04f10d036f0477d0131a4</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="BANKING KYC">a06651b3c3808310d036f0477d0131f0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 05:36:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ecea74b9c3d04f10d036f0477d0131a4"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=2cea74b9c3d04f10d036f0477d0131a0"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2cea74b9c3d04f10d036f0477d0131a0"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=2cea74b9c3d04f10d036f0477d0131a0^sys_idNOT IN78ea74b9c3d04f10d036f0477d0131ea"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="KYC Process flow">2cea74b9c3d04f10d036f0477d0131a0</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-17 14:14:38</sys_created_on>
+        <sys_id>78ea74b9c3d04f10d036f0477d0131ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-17 14:14:38</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VY2W7jNhT9FUFPLeACWrxEeUsdDxp0OkFtT4siSAVKIm0iNOlKlBJ3kH/vpRZbluQtVqbOUyCSvvfcw3MX5uGbzpCHmX6tT5HHsN7RKZc45IhNV0sMy1Ituxwt1N4C8QBJEa70axnGuKOTUCymeLFkSMJhglgEiyIMcKhfmx09QSzGk1V0F4Al+H1qJrep59vw/eKajtM1+5brIf5EuWu6Tyvf9VGkTgU0AvurP/LDv/411IY3kxHs+HPKghBz/frhsaMvUQjmpXL9rbJFlX+f+MixsOHbpm1ZhmFddU2vb3umFdgIGwYYrHJRwSsbKNkEi18k5gEO1jzU2AoxCu45W61PzIHsjJkFeonov2D9ylDnCAbsPs721p9uTkW27M8F9fH9UlLBs5UMZ7YpWLzgXzL8ikRMUMxkQSKsxBHYw0sFWYHIEZHJXDyPC4efKE+jyzeZ8BFbfyEpQ+rFEkeKcEIZUO9m3EQiDlP049Hwfnzr/nkzHf4yGrvj0WQ6vhtOR7f6axqX+0+sLGYIcyxuFs7r+uY/UczUBfJ44QGajh75IV3KG1/SpFDda2ej5KHgAU1ZqanZL7aibTUX0e+Ts2HsFLRf8liI+u/R73XxZoun6bbfRyjAaIduPVLSbTnyBmiygYRydPsUnK8cI+GuYfxPIs6L0ls1/Iy4jFwpXBQEboklSHkwrEIUAWa3G3+wTmczkD3ly1hGB0WdxfZ6UMFhzOEH7vo+6jpOaVvz95lGgOYBsrDgJgdMPucWxzHXBNf8OARSpAb3qhXWtRSV0gK5W6BZziyZYIZ9WRID+RqVv36jUUT5rIR+7TxdqXtnqzKEoqie4/SxzSSuk55U4qkk88mZbJqEeJhYxkDlsWnYHjGNgdFDJLANw7dKmVwHsxOlrEjiXTL6tHyOUjGyI26/SnEO3ihnw1HaTbaFX5CgJJKXjWE70MyWoFkKWqX82SfVv7Uss+XbbXXuC63l3o+CBMEvgiLGY3r7ERWQMPEMlfUN1Y+IEM9CEfOgWoWUTY3C360TLdU9D/lP+91uTmg/5Nf246XVwA3thXARX7VQ/Wxieg7uYgOKng31zus5jucji5BBf4Ats1L9NjAasX2Iqnfg2pMm3eyqgI3KTZoEf0LtOwNgrQ6eDPD8CpgLs7H+ZXsfo9I9zzF3AWroMlXLagVvxmiAi712s73mOtnk97kZT64cv2cOBv4AXi2Q8aSLPWR2rR5yBn37qlfJ+BqUfTBlAzPf5S0TraIUyI5q8DXbuqzH+XvKNsJSqnZ0epdOz6PMQalfqivR0oIiQk3Rqd1tDmoTDN0vfc221rWFnNf6Nbj+Gda3XKvp7ovgPzXAafP1xGG8P4aaHVAubZyoiCTZZv3sJxXuXvUcYjeXGOI0lZgNmN0wL368OFIKyU5RNc0Zx6Ze0pjBOweDNyRTRSbliWHPSNMWKWbrpFjvR4p99hhV5OLOd+RbwH6gFpbOFW/vY4JjV5DGOk2Jlv+LEAeat9LkHAOZDCZlcKUpv212jmzkrTUyWNbyiaW9HqVoroZ9KzTY0MLvEvj7NKqKFNp9AeNggHo9e8c87FRfwE2ADuC9+LZ1skSSJsXt7V2n2a3abOxepQzaVsSRfanVqJub03lRN7anQ1Gf33j2vd8bUFxoS3n8D6Of0W9GHwAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=2cea74b9c3d04f10d036f0477d0131a0^sys_idNOT IN036cb47dc3d04f10d036f0477d0131ea,38ea74b9c3d04f10d036f0477d0131e0,3cea74b9c3d04f10d036f0477d0131e6,7cea74b9c3d04f10d036f0477d0131e7,b8ea74b9c3d04f10d036f0477d0131e3,f8ea74b9c3d04f10d036f0477d0131e4"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="KYC Process flow">2cea74b9c3d04f10d036f0477d0131a0</flow>
+        <generation_source/>
+        <order>10</order>
+        <parent_ui_id>5adfd11d-d5b7-4dd5-8106-4dddc2fea317</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-17 14:21:21</sys_created_on>
+        <sys_id>036cb47dc3d04f10d036f0477d0131ea</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="BANKING KYC">a06651b3c3808310d036f0477d0131f0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 05:36:47</sys_updated_on>
+        <ui_id>771491af-47ed-407e-98bc-aabddc8d0f82</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2YXW/bNhSG/wqha8+V/BnnaqmzYMXSFqiDDkNTCBRJWVwoUROpOG6Q/75Difqwlbl242EJlksfHpIvD9+Hx/aXe4dT59QZ0RN3EoQjPHWHg6Hrngxms2A4C92T6cz1CHV6ToJjBpkZIzIzn2+xyE3g/n6eMawZ9b0+ybOMJfrhAcYpV6nA6882DSIk4oLCuHP65WvPSXEGK2qWOaf3W0P7ShI4YAJSr3C2ZBp9qqRtS9Xr1HymkuQxyPN5Fby0C5zbEfTuHEZgklHl9hx2p1lCGcgJsVCs58Q4oVjLbF1H4Oz0YyKaQMQTDUueKSUJh7oopCOGWIy5QCuuI4RRKazvmPXuFP8G4oYDs1TIoAbEaOUJ4RQUOa2wb0sKw++a4fAca7zQWU50ntWVlpwwVVaTshDnQs/bsTLhY6q5TMopGgeimi1FHicfyiI69QKtm8wViGGpqY05LGwOBw8XkVx9qsRe8KSooq2KkASL+lO4YDgj0QVnwlx1kscB5PYcrHXGg1wbmWAKAVnNPn4h1ewFmUyw4ipjnKY8WfppJm95sSHIj/tLAR/6oZArmK/4MuljYs7ah9vD/QuInxfhzzjj5uDvYRmY/NBz1FrNBVaqOT7U3/8rN+rLYmzKMbP9wnBmMsl4qs9gq1tmD/vQs4h5s11+pqPGt601G8zufG82G3mTgR/g5IYnvuffrIlPsGJd2H77Y47mZ4tfDoZuD5ENdMYwj4u2wHVil+256EM5YHHzDsStNJ2l7QoQ0+UrUMKFtJVXE3bibhL2D2Q9D6JqTvZGahOdfwcPMInyS4/bsxWb/wA234PFnUyCYBKMp8PGhzMS0mkQTvCUDBvfreCJzWKc3fjFE9sixutyYR+Pw5jYQ0vFBDzLIqcM/V6J2qXTQhJICe9csk0IKH1zUVS3JmTwpIZUWhNpieAyxRraUC3JBJsmpSOsEVdIwW310ZVE3J6qNaOH1jJHca40pGkY2YBvo7ONni931g42ev6oV14EmMcHcLy7EeDG2DjytWxhp4KBNx1A1s9LY6c+HKsL4uNJh3G5h8S6V8muXoufgttJllv0LaqgJW+4m7yyFXXAa7Ue9/lC8FI8boQLHvPCECWdx7c93ekp5m7YiJCW7Y/wi2ePzStDz+ddJYcYevRjreTV0S/O0d7On9FssuGj4NiW3mP3ytJvtzwdHGzq8aup/yemHu+2FdkwksqDPxnRLWMvLs/QW/ABiRjtmnxr9MAvJd9XVhl+Uet6TOshxp+8fj35z31/fJPjnVYKB5uvpaTrlsOvc9cdkhQZzT9pnqxjwjIpdQCFuSkG6bVzXaYx82+R+R8JsTvCGJgIGQQ0j1m5zJu0zOuiYrc5eJnDmNqjEHUTKcvQqYulKdKx2GLp16v3lw1J0ye2kMl4PJy8svTkHpKu6IBmMk3t2Y7cR77+DR+c5e74GAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=036cb47dc3d04f10d036f0477d0131ea"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="KYC Process flow">2cea74b9c3d04f10d036f0477d0131a0</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-17 14:14:38</sys_created_on>
+        <sys_id>38ea74b9c3d04f10d036f0477d0131e0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="BANKING KYC">a06651b3c3808310d036f0477d0131f0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-17 14:14:38</sys_updated_on>
+        <ui_id>b6e34606-65e1-4eb3-bac0-0fba2f618311</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1TXU/bMBT9K5WfqyhpS0X7htohTWMgAUKaAFk39i1YOE5mO0BW9b/vJnHarusQaDwMaXm7nz7n5J7rJVOSTdkIZZxMkrEYJsPhII4Hh6MkHQ/TZCCHgJiwPjOQIXVaFLmVFD+CLuvEcjmzCB4lTyJRWovGr1ZUl8oVGqqr0EYZca+0pDqbXt/2WQGWNnq0bLrcKb0WkoYUNbWed5h2MfqqqGOZizIjXFx1yZMwOQ+V3uc5VWiohpPEfYbPHo1EArIA7bDPMjASfG4rNvW2pASRlmdGV+uOe2V8SzSDZ6d+0MujuO5bIDETQYR1yINAbXoxBw8XtFn40q71ypVA12oicQGl9rPtXNtwVniVm3bEQ6q76VyXmTltFWHrBVv/o3QEAouaZ428pbW4uM+fzjuQx8o0kgSKOheg1xF4b1Va+hrOkqHGRuMMikKZO17Y/FE1wwQli+40BdFC50/0plN3JgJR445IVYiOKT9v0ldgVU3iK62h4VWfucrNNDi3oUIa8u9ljaQlFijwRoVGAt5cQj0srCr8ET31iAH4qh+OPh68eGG4Oajm1t3W0RMcwko3DwZ05fxNGcdDuccK0W7nPm/85ba3+eoVrDtfHSvU0u2RIfjKY0Y0PPJWll+tdRmKvatQXLvr3eyVjOPm+2+yf9dk6cFL5yYmm+va2rkx2jNPJpNRMh7wFMyDMjzhD5XgAhz+7qMv32a92dHFpzd74hUgO09cNj9/P+jOFru5k+3Z3mlbCHY4eDc3HH4kHwQaH94Ifzr/2592lwXwWgkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=38ea74b9c3d04f10d036f0477d0131e0"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="KYC Process flow">2cea74b9c3d04f10d036f0477d0131a0</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>a04a304b-1589-46bf-b655-1928920e0f88</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-17 14:14:38</sys_created_on>
+        <sys_id>3cea74b9c3d04f10d036f0477d0131e6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="BANKING KYC">a06651b3c3808310d036f0477d0131f0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-17 14:14:38</sys_updated_on>
+        <ui_id>20143ea3-021a-4858-be42-cf8730723af3</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2Xa2/aMBSG/wrKZ8ocQtLQbxWs0u5SL5Omqooc+4R6M06WOFsZ4r/vJHYIg47SlUrt1C8IH99eHz+vY1/OHcGdIwcGgefjz2HiEbfvkhCCMGRDQlkYBP7Ac7qOolPAljTL8vQHlVEOtEgVVmChrGrwLxdFJunscxth10LyHJRzdHnVdTKa4ygacudovla1qwxJY5DY9Njq6Jw2Ov4qUM+yqqLQuVATW35vhzlrgmnOK1n9rgM3GhQH1JNQWUDXmVLFqU7z2TKCQ/NPSraBa6G0WfCU3hTiF87nBqRqmAAukdlsLIuRzZQJJ2OqKSopmS7zZeJSwaAwyeGQ0FLq0WrMNPiUaYGLrLtoGsumdyrLqfpoMuIsB1jZmLJAEZBVK62k23UkZ9fpz9NG5YlQdVJspUwZlcsS1Zi6uNSVnrlTivO1LJvIRp5BwhRnjKa4TxiJqs0S9SwoetqbSCz0Epn+RHWFmKgeZdUKe7gDtHeC8XEd/kxzUS33Aw6DnavpLpT4XsKbiqOgHwdDEvIDnpD4YBB6/gFlQA4gcH3wecB813MWXaeYFSNJi6JNFO5Q9L2slmnSZhMUmRxXXVguMn2Mon6AzcWia11E3KQPw2GfxC4hHiGhz0joQewdBoce5eEtkCYCJN+viXZQsWGiEyvjb/KshepiVDf600Z1/85HU7F3K4WEPCcv4eQPsdLjOOT+tJsU3IE82wobrHw4vqZlrh6H+B1ENMS/NSrWgV8X9y+8ey+8//+8H4bbUGOkRSoHhmCsgD6fj3DzNfDI7bEyxzTpxWIP9O8gqaH/tNG0rtHyzlNW1nsh+BrwY1vTeTNuiSfbiTdc7AK813/B/UnizvxtbCXDFiVeYpKQ7j2f7HfP37A9LqEzNgI2JTVPAHYNvJQmHGmxca6f2Qb1SK/Oxer57u/tfB88p9P9oS+Dx7vwR801taIZTfkIN/rBVv5gBbbllZmliotqBcWKFcxFG4pjNbu4vOVD0Ft2n+RpmfWQKzqBfLG42jTRg8a6n/12WP7y04KuKe5Kh7Vh+0S3nVYt2D7sbaW132BfH5tndrt6mv7bv9VitvUaw1q2TDZbc91E7nA4cIN+FFP1TajIjb7NWMRoAZvuefdl1Bkdn72+txd20Nd44dwKXNNr6a+Ltz0q6m5rjwr3nh8dY4NbqX9h/skwf/Ubl4+MRngVAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3cea74b9c3d04f10d036f0477d0131e6"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="KYC Process flow">2cea74b9c3d04f10d036f0477d0131a0</flow>
+        <generation_source/>
+        <order>7</order>
+        <parent_ui_id>e88201cf-4e77-4aa8-8296-ee5f68ba838b</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-17 14:14:38</sys_created_on>
+        <sys_id>7cea74b9c3d04f10d036f0477d0131e7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="BANKING KYC">a06651b3c3808310d036f0477d0131f0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-17 14:14:38</sys_updated_on>
+        <ui_id>7890021b-9842-4c55-b202-1e3f1dd58ce8</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Xa0/bMBT9K1U+l85pHk35htohsQdIvKQJocixHfBwnRI7jK7qf99N7DRdC6WMIsHEl6q+149zj89x7Iupw6mz6zA/9AL46aUecrsuilgYRaSPMInCMPA9p+1IPGLQE4/HeXaHRZwzrDIJCWgUZQb+Uq7GAk/Omwi55oLmTDq7F5dtZ4xzmEWz3NmdLqU2hSFwwgR03bM4Wsc1jkcB6sm4TCidc3ll29/sNCd1MMtpCavbdti9ZpIywJNioVjbGWFJsc7yyTwCU9MjKZrANZfaFDzC94r/hvXcEJUdUwYlEsvGvBlbpkw4HWKNAUlBdJHPics4YcqQQ1mKC6EHizHT4WisORRZDdE4EfXoTBQjeWgYceYTLGxMoQAEG5eVltBtHenJdfbruEa5z2VFik2KjGAxb2EN1CWFLvFMnYKfLrFsIis8M8FGsGI8gn2CSFxuFq9WAdCjzpWARicV2S9Ap/iV7GBSVtiBHcCdfYgPq/A5znlZ7neYBgaXy51Jfluwg1JHYTcJ+yiiOzRFyY4fecEOJgztsNANWEBDErieM2s7aqIGAivVEAU7FN8WZZmGNktQbDguh5Ccj/UegLpjlotZ27oIuWmX9ftdlLgIeQhFAUGRxxKvF/Y8TKMHRJpyJuh2TbQBihUT7VsYj8GzFqqacdXpbxtV41uHJrF1K0UIvScvweIvsdLrOOT5ajcUPCF5slZsbOHD8TMrcvk6it8ARK34LwbFsuCXwf2L3r0Pvf//eu9F66RGUCOpnBEQxoLQp9MBbL5mNHY7pMiBJj2bbUH9G0Cq1X9cY1rGaPVOM1JUe8HpkuCHNtM6GDaKR+sVb3SxieC97ofc36TcSbBOW2m/kRItgCRQ95ZP9qfXr7U9LFhraACsQqqfAOSa0UKYcKz5yrl+YjtUM3065Yvne7C1891/T6f7S18Gr3fhj+traqlmMOUr3Oj9tfpjC2KbX5lJJikvK1ALVjAXbab25OTsYjpVGmtOOl0fRRgnKfFIFHkuosgLU+T3ehS5nkvxbHa56qGXTPU8821Q/PzDAp5RT5FhTdg80O2gRQM2z3qbtObzt/WpeWd3q7fpvu0bLSFrLzGk0ZZhs7HWfez2+74bduMEyxsuYze+mZCYYMVWzfP1x6A12Dv5/GwvbICv9sKpBbiE16q/aj70pKiGLT0p3Gd+cowNHlT9h+bfjOYv/wDy4dqBdhUAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7cea74b9c3d04f10d036f0477d0131e7"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="KYC Process flow">2cea74b9c3d04f10d036f0477d0131a0</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-17 14:14:38</sys_created_on>
+        <sys_id>b8ea74b9c3d04f10d036f0477d0131e3</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="BANKING KYC">a06651b3c3808310d036f0477d0131f0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 05:36:47</sys_updated_on>
+        <ui_id>67ecf4e9-863f-4936-9fcd-ee5752f54932</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Y227bOBD9FUHPXle+x3narLNBg00bIDa6KJpCoCjK4oYSVZKKow3y7zuUKEu+wLHWDpoCfjOvc2Z0zsyY355t6tvn9mB85gy9oI9GTq/bc5yz7njs9caBczYaOx0f2S07RhGBnSh0FYfhI2KpHkuv2xl1R2fO7/MIUdbGPIJVn8qEoezLzk04pMwXJLbPv31v2QkSYEERYZ8/ry3tC5EhjzDYOuObeFWW5EiUoPHcjG/M/mk5yYWv7fdaNnlSJPYJGA4Qk6RlRyj2keIis8+VSGFCEOTfxiyr7XiS9F8wcuY4jl4PCHiAtVW7NnRNbIrp4BIpBPZTrFJhtuKQU0xk4btPApQyNanPFRtuE0V5XBxRyGPlac7SKP5ceG8vLyg/BcykEkCQRPsXqyX8YBryxV2J8orGeSjMIuMYseUIKQiYlyqN59kmjERwkRuhJIEwuongjzQ/DFii9pzBoB0wvgCjks7jNsIaeBvCidpXMH+ZT39BgmovPsE1cFgDZzSiOSFsHXL7pWXLTE4YkrJyD+Lq/kg1uMJZ45ZbREYfwYIm6gJsPhLjwUvL0N4ZDj1v6A1GvYpTYxz4Iy8YohHuVTRaIAASIfHgEs3gmgA6m3TP0Tbl9x5YSn5fx5ilPrH+LkHtwmmI73HOCIrXmD8DpB+udEwq9nd3s9/MbNA/pJpMdsFKS3ELviPLLGQtIelJFRIrRwa/kLKotCR8rbY14xY1XtVOtKyMp1aUSgXbFKwoJObwQxAMYNt2TXT99ys5Qwcze7mVK7+EJo8vwI6/K6mT4Uoe9zCu6W5Tdo0lt4f1UnJ/TCZbsDQpKoP/J6tTVfnlqkp/J62wXxGpyGM1Uj8/T4ABivhup41TAUFTLy9HYPoekJbNU5Fi70po61AN532O0/wDUX+N+Jdmxbq+rNjvHFRULqTkmEJcZK2ALKgKoSRsqQW97qpQoLLQnJXbBXNdLb8D4RTdZQPdBFOCBA6vKGH6U8dp5OVMX9UThuov3DUmm+LzXqpFHjY3J9wrEkM7+Rx0V3M197Oaxu5Tx+nhxNLof1M0ziJMBOfKg7A+5Iv+vX1fbCMfCWO8VRz5kBRz93GjK77yVFh/fZ0AU3+kBFqZEEnLIyS2cKF1S6YYyCSDlLGsfZCtWzClCIpAHIyBwUdKFrqHElapV2i4Qi7UoYZmIYof9M1r12zmKnPtHuE8ZriOFo5X3W2WiPcg7rLlKGi7wWOTgEMVsbXM+3H26aZKuaMDG47hYNAbnjqOgzuOZOF3fcGTxPj2Rl1HZ/f7SL+iUi3NVlnxye2Mx/3OsOt6QHUaux33IcMuRnKLprU8JxfTP5t33K+DrPoQHa7toI0ENuZu6metz8WCkUOnoRyKOmwakBl0HSv/PS1l4NX685NWDtYKlW7BceNbbvwNxDLY/c8Pr+RdmXr/EKxqYtH8vzPlyTTs20Wyuanho+frOEu9TJcotyFv8k91eHr+/OlSOD7l/Z2plzgrxDn2S8sexkserz20NH5n6Z/eWX4+fd/0neX7fwpU81O2GgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b8ea74b9c3d04f10d036f0477d0131e3"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="KYC Process flow">2cea74b9c3d04f10d036f0477d0131a0</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-17 14:14:38</sys_created_on>
+        <sys_id>f8ea74b9c3d04f10d036f0477d0131e4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="BANKING KYC">a06651b3c3808310d036f0477d0131f0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-17 14:14:38</sys_updated_on>
+        <ui_id>34a6bf08-b2ed-42e2-ad67-4b29bb66237b</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1TXW/aMBT9K8jPKEqAosJbBUOa1rVSqZCmtrIc+6ZYOE5mOxSG+O+7SRxglFVU6sMqLW/30+ec3POwIVKQIemBCKNB1OfdqNvthGHnshfF/W4cdUSXAUSkTTRLATsN8MwIjJdMFWVisxkZYA4EjQJeGAPabbdYF9Lmiq1nvg0zfC6VwDoZPjy1Sc4MbnRgyHBzVDoXkmIxKGy9azAdY3TrvIxFxosUcVHZJK/95NhXWl/HWMGhEk4UtgmsHGgBCCRhykKbpEwL5jKzJkNnCkwgaXGr1XrXMZfa1URTtrLyF77cC8u+BJAZ9yLsQuoFqtPJmDk2xc3cFWanVyY52FoTAQkrlBsd5uqG29zJTNcjjsWqmc5UkeqbWhGyW3DwPwqLICAveZbIa1rJdJ693DUgJ1JXkniKKuNM7SLmnJFx4Uo4GwIKKo1TludSP9PcZEtZDSOUNHhWGASJyl7wTSufdcB4iTtAVVkwwfy4Ss+YkSWJ77gGh7dtYtd2pJi1eyqoIf1ZlEhqYp4CrVSoJKDVJZTD3MjcXeFTS/DAt21/9GHnzQuD/UFVt24Pjt5Iu6AKlqAeizDsCoT/+uRPN73PBWdgbFwwkaCEPQHau8BBiugc0JrEn0a498XWzBd3XvgwM0T9sPr+W+LftUR88da58cH+ug527m2xotFg0Iv6HRozvZCaRnSx5pQzC6/t8e3HqDW6mn55tyfOANl44r76+adBN7Y4zl0fzrZu6oK3w8WHueHyM/nA0/j0Rvjb+T/9BuUiA7gICQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f8ea74b9c3d04f10d036f0477d0131e4"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=2cea74b9c3d04f10d036f0477d0131a0"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=2cea74b9c3d04f10d036f0477d0131a0^sys_idNOT IN38ea74b9c3d04f10d036f0477d0131dc,b0ea74b9c3d04f10d036f0477d0131db,bcea74b9c3d04f10d036f0477d0131d8,fcea74b9c3d04f10d036f0477d0131de"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">7484b87dc3904f10d036f0477d013150</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="KYC Process flow">2cea74b9c3d04f10d036f0477d0131a0</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Wait for a duration of time">fdb2541473031300b61e66476bf6a70e</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-17 14:14:38</sys_created_on>
+        <sys_id>38ea74b9c3d04f10d036f0477d0131dc</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="BANKING KYC">a06651b3c3808310d036f0477d0131f0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 05:36:47</sys_updated_on>
+        <ui_id>baeaf464-9564-44ea-abb4-21f22c656c8b</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Z227bOBD9FUHPXlfU1fZbkWyAAu22SIy+FIVAUSObKC1pdUniBvn3DiXqZstNnbqFgxbIgzQckWdmzuFMkgc9KYu0LPJl8jrP+SrWF58+T3QeSxs+P+gx3YC+0Au+gczPQNCC34Iflhk+JLGfpIBPSaZP9FsqSulKowLke8jzVNDtxx0zW3MRZqBOSmmGB8iVxcPOEg/xq5BRmxiO7VmGRSzDCFwCrmt7bhC51DNd3FDQAAS6LiVErYGoNRC1HsQfD6bYptKTrRPOQL2/VQddNMYkCyVwhDXR4b6AOATEHFGRw0Tf0DiUm21bSwY0fB+LzrDmcYH76dL5Pudf8UTbkH4RYBYY1Gvtq68yWpujS1rQmyIrWVFmyrWGWxeuSUuT993yKPDG46TzDSBKMug5twblTR6xMCFEtBTFxfGHkaMOM+VhdUjvU1kg9LFkLWggmoATUW7i/+qy6i20Xc4p8+U4I8scUwupLJ+sB6YUaxPdrJO76yb1VzyuIKnCiYRR0b7Rosh4UBYyFw86CNjgPv6GpimPV36aJbe8+hjRbqYrgS/TSCR3eKZU3JQyGdsUyUKnV2i/rMwfacZlnO9wGxVDjZBt/SZhewweuikOd0R8nOj5Nr8QNM+7lCG9/P9LGY7e+7zwq3S30qj2kt+zjKfFayaPVQmQNR0Iq4emQUrmnvGPQfBHM4yFQRaGsX9DEO0djzGNR18SEBHbYeTAJRFA75K47LAdwqzSVhVq1/52f5uGrGd4CYxpdV9SRylqXy4qjLPTC8/9mqwqturwZ0jgadYPRdKRHu5TwRkvBvIcUv5f5aL1XI7jvj33LGd2iPszZ4T72rLGeQD+Ma2PnCHruw4zlt3vFWesJV7vzhO9Pcbu37FO9wEyhnyiq9Fd0nZ1ZB/ziYb7zBDJCUI0TxSi9dNtflRooy1/LF0v4j77FffWoTEYkYBc6xVw/+Y6+qIikemEByd5z/rOJI94NAXox6EP2zja/d5C28fR/mpZ2xUd7TO80n5LI//JuXe8307+zsOYljWEpejryZpF1LUhZAadGcRFzkU2dTzTDgzbsoPZvt5MW7vXvKNVFwWOg8PxAdW55nA8wPpoxRq0KBGYePnWw34oJpXWjudDiV337EpizgklZplDibFN3Ac3JrebbvkMZHd8v4lugGZsfcVByBJXdXm5Xag3G9TUqv749IuaUBCR0CUuCTzLNVEOls1cBu4cgBA6N42eHHoTTYVLq3CNNaOnI3huLzrleF3t9WKa0XlOYb/zt8qaSh23TiuEmWFZljFnjuW1QghDgCjyAmICGRXCbhMYgFMcR+LBCrIdbr9prX+Z/Ycy+7Pkb31mm2vGc4S2lLY3zb8c5MIWacZZ33SXZF9kUJ3t8Rsmrm8SvBgAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">0a915f60c31c0710d036f0477d013149</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="KYC Process flow">2cea74b9c3d04f10d036f0477d0131a0</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-17 14:14:38</sys_created_on>
+        <sys_id>b0ea74b9c3d04f10d036f0477d0131db</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="BANKING KYC">a06651b3c3808310d036f0477d0131f0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 05:36:47</sys_updated_on>
+        <ui_id>e88201cf-4e77-4aa8-8296-ee5f68ba838b</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8FYNnQ5Cs2Gh8CxwELdA2QBLk0gbCiqQswhSp8mFHFfzvXephG7WBNm2PvYnD3eXMaCi1RHtXe2ef9I21Yq3I8svLlAgVMHxuiYKKkyWhWjHhhFZkSrYgfcDadmU4OM6yJKLeGK5cZITdZJJvudzvv/o4Tlkp1iU2MWFrCc3zn/TSUkiGJT25GgxyctyQZfvTlmA4+hrmxTyJ5zSdLdJZHM/eXSX5Is2TGUuBXy1woIScSyxdnai6INQ1dYCsM0Kth/XHofVxBLVhgcosnhL+6rhiHEkUIC2fkgoUA6dNQ5bOeARQM7tXsjlUlEI5nEZC7asV33mYFMehsuCoi/J+97DMBiN7uLgFB0jFU+fNUEpLLSi3vSOMF+ClW51ifcF93ansWhzkcuzW0lfqc28GOQwY3xsi3iIJXgelgfsgpHgs9e5hZHknVOfKsCk1BXlYgUPvcu8Cn5ZwySsclFVQ1+hoVhu9FV0zcqmitcRFVEi9w0NDQiOggXiExkJ0h/htBz+DEUHFJxyDzZgFm1lqRD1q6w4n+ymxjV1JsPaoEc3NvvnAsFc8aMt6e0JLN+gGD97yQcZ+en43sg44XpBVyelm8h5DPHnAbJ/fgvOCt0W9iKFIrmlyOeqQXor6pE/weeBH9m9JffKL1A/Ib8V+Pv+f+r9OfaCZgxU0677hOC58eP5h7F9CvPtDD2ZTYZHbU8A+jH+OsNFgogQ9hXbabIKqI7b/AdxLhoeDBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">868e07e8c3d80710d036f0477d01316b</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="KYC Process flow">2cea74b9c3d04f10d036f0477d0131a0</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-17 14:14:38</sys_created_on>
+        <sys_id>bcea74b9c3d04f10d036f0477d0131d8</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="BANKING KYC">a06651b3c3808310d036f0477d0131f0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 05:36:47</sys_updated_on>
+        <ui_id>a04a304b-1589-46bf-b655-1928920e0f88</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VW2/aMBj9K8jPKEpIQStvFVWlSV2rtVVfti76Yjtg4diZL9As4r/vcy6ABtJabXvbGz7+LuecnJCGaO8q7+yTvrJWLBWZf3kZE6EChr8boqDkZE6oVkw4oRUZkw1IH7CmWRgOjrMsiag3hisXGWHXmeQbLne7rz6OUyb19tvd57fVlpwJX+IKJmwloX7+95voSkiGRZ3wCgzqddyQefPLlWBI5BKmxTSJpzSdzNJJHE8+XCT5LM2TCUuBX8xwoIScSyxdHDl2xkRXVwGyzgi17M+3fevjAGrDApVJPCb81XHFOJIoQFo+JiUoBk6bmsyd8QiganavZL2vWAnlcBoJta9W/OBhUhyHyoKjLsq72/0x623v4OIaHCAVT503fSldaUG57RxhvAAv3eIY6wruq1Zl2+Igl0O3lr5Ud50ZZD9geMqIeIskeBWUBu69kOJxpbcPA8sboVpX+kupKcj9CRx6l3sX+DSES17ioKyEqkJHs8rojWibkUsZLSUeogJzg0tD+iOggXiExkJ0g/h1Cz+DEUHFJxyDzZgFm1lqRDVoa5eT3ZjY2i4kWHvQiOZm331g2CnutWWdPaGlHXSFize8l7Ebn753WQscXr7FitP16AGDPboNwT59ac5UvC/sRQxFckmT82GH9FzYR12GTyM/8H9P7pPf5L5H3hT86fR/7v8494FmDlbQrP1C4Ljw1/MXg/8SAt4t3ZtNhUVuTwH7OHyXwkWNiRL0GNpqsw6qDtjuJxMIpozhBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ca95b8fdc3904f10d036f0477d013153</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="KYC Process flow">2cea74b9c3d04f10d036f0477d0131a0</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-17 14:14:38</sys_created_on>
+        <sys_id>fcea74b9c3d04f10d036f0477d0131de</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="BANKING KYC">a06651b3c3808310d036f0477d0131f0</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 05:36:47</sys_updated_on>
+        <ui_id>5adfd11d-d5b7-4dd5-8106-4dddc2fea317</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXWvbMBT9K0HPxthxE9a8pSmFQbfCUvqyFXMty7GoLHn6SOqZ/Pdd+SMJS2AL2+PerKN7r845PrJbopytnTXPamkM30iy+PoaEC49hs8tkVAxsiBUyZxbriQJyBaE81jbrjQDy/I0DqnTmkkbGovAfv/NRVGSq5r5+pybWkDzcmUbLbnIcbenVINGJpZpsmh/2eI5Tr2FWTGLoxlNpvNkGkXTDzdxNk+yeJonwG7mOFBAxgSWrk60XJBnm9pDxmouN8P6cWhdj6DSuacyjQLC3i2TOUMSBQjDAlKBzMEq3ZCF1Q4BlJs/SdEcKkouLU4jvvbd8B/MT4oiX1kw1EVZv3tYpoOHPVzcgwWk4qh1eiilpeKUmd6RnBXghF2dYn3BU92p7FosZGLsVsJV8nNvBjkMGF8ZIs4gCVZ7pZ77IKRYl2r3ZWT5wGXnyrApFAVxWIFF7zJnPZ+WMMEqHJRWUNfoaFprteVdM3Kpwo3ARVgItcNDfS5DoJ54iMZC+ID4fQe/gOZexSccg82YBZMaqnk9ausOJ/uAmMasBBhz1Ijmpt+dZ9grHrSlvT2+pRu0xIO3bJCxD85vRNoBx2uxKhl9m6wfl5M7fPG0PL8BFyquC3sRQRHf0vhy2CG5FPZJn+HzyI/8r8l9/JvcD8gfBX82+5/7v869p5mB4TTtvt04zn96/mHwX33A+0MPZlNukNuzxz6Ofwy/0WCiOD2Fdkq/eVVHbP8TLcbJyXsGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=2cea74b9c3d04f10d036f0477d0131a0"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=2cea74b9c3d04f10d036f0477d0131a0"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_2cea74b9c3d04f10d036f0477d0131a0</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-17 14:14:38</sys_created_on>
+        <sys_id>20ea74b9c3d04f10d036f0477d0131b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="BANKING KYC" source="x_1994162_bankin_1">a06651b3c3808310d036f0477d0131f0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BANKING KYC">a06651b3c3808310d036f0477d0131f0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-17 14:14:38</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_2cea74b9c3d04f10d036f0477d0131a0</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-17 14:14:38</sys_created_on>
+        <sys_id>6cea74b9c3d04f10d036f0477d0131cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="BANKING KYC" source="x_1994162_bankin_1">a06651b3c3808310d036f0477d0131f0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BANKING KYC">a06651b3c3808310d036f0477d0131f0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-17 14:14:38</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_2cea74b9c3d04f10d036f0477d0131a0"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_2cea74b9c3d04f10d036f0477d0131a0"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>57bfd2b3c3c88310d036f0477d013171</sys_id>
+        <latest_snapshot>2cea74b9c3d04f10d036f0477d0131a0</latest_snapshot>
+        <compiler_build>glide-zurich-07-01-2025__patch6-01-16-2026_02-02-2026_1554.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=57bfd2b3c3c88310d036f0477d013171^sys_idNOT INc9eab4b9c3d04f10d036f0477d01314c"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"c9eab4b9c3d04f10d036f0477d01314c","name":"plan","plan_signature":null}}</plan>
+        <plan_id>57bfd2b3c3c88310d036f0477d013171</plan_id>
+        <snapshot>40323d33c3a8cbd0d036f0477d0131c1</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-17 14:14:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c9eab4b9c3d04f10d036f0477d01314c</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-06 05:36:48</sys_updated_on>
+        <trigger display_value="">1c9a74f3c3e0cbd0d036f0477d0131f7</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=57bfd2b3c3c88310d036f0477d013171"/>
+</record_update>

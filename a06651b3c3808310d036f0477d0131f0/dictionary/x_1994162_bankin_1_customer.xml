@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="d837d9f3c3808310d036f0477d0131a4" label="Customer" max_length="40" name="x_1994162_bankin_1_customer" type="collection">
+        <element label="Phone" max_length="255" name="phone" type="phone_number_e164"/>
+        <element label=". Email" max_length="40" name="email" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Phone" mandatory="true" max_length="40" name="u_string_1" type="string"/>
+        <element label="Name" max_length="40" name="name" type="string"/>
+        <element label="Date of Birth" max_length="255" name="date_of_birth" type="glide_date"/>
+        <element choice="1" label="Onboarding Status " max_length="40" name="onboarding_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Draft" sequence="0" value="draft"/>
+                <element inactive_on_update="false" label="Review" sequence="1" value="review"/>
+                <element inactive_on_update="false" label="Approved" sequence="2" value="approved"/>
+                <element inactive_on_update="false" label="rejected" sequence="3" value="rejected"/>
+            </choice>
+        </element>
+    </element>
+</database>

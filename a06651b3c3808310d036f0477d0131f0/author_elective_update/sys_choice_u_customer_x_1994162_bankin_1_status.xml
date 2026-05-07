@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="x_1994162_bankin_1_status" table="u_customer" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>x_1994162_bankin_1_status</element>
+            <name>u_customer</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-11 11:17:14</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1994162_bankin_1_status</sys_name>
+            <sys_package display_value="BANKING KYC" source="x_1994162_bankin_1">a06651b3c3808310d036f0477d0131f0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="BANKING KYC">a06651b3c3808310d036f0477d0131f0</sys_scope>
+            <sys_update_name>sys_choice_u_customer_x_1994162_bankin_1_status</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-11 11:17:14</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_1994162_bankin_1_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Draft</label>
+            <language>en</language>
+            <name>u_customer</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-11 11:17:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-11 11:17:14</sys_updated_on>
+            <value>draft</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_1994162_bankin_1_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>approved</label>
+            <language>en</language>
+            <name>u_customer</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-11 11:17:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-11 11:17:14</sys_updated_on>
+            <value>approved</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_1994162_bankin_1_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>rejected</label>
+            <language>en</language>
+            <name>u_customer</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-11 11:17:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-11 11:17:14</sys_updated_on>
+            <value>rejected</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

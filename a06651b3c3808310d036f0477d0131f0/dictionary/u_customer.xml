@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="7fba453bc3008310d036f0477d013155" label="Customer" max_length="40" name="u_customer" type="collection">
+        <element label="NAME" max_length="40" name="x_1994162_bankin_1_name" type="string"/>
+        <element label="Status" max_length="40" name="x_1994162_bankin_1_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Draft" sequence="0" value="draft"/>
+                <element inactive_on_update="false" label="approved" sequence="1" value="approved"/>
+                <element inactive_on_update="false" label="rejected" sequence="2" value="rejected"/>
+            </choice>
+        </element>
+        <element label="PHONE" max_length="40" name="x_1994162_bankin_1_phone" type="phone_number_e164"/>
+        <element label="DATE OF BIRTH" max_length="40" name="x_1994162_bankin_1_date_of_birth" type="glide_date"/>
+        <element label="EMAIL" max_length="40" name="x_1994162_bankin_1_email" type="string"/>
+    </element>
+</database>

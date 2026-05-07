@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="5d7b557fc3808310d036f0477d0131e2" label="KYC Document" max_length="40" name="x_1994162_bankin_1_kyc_document" type="collection">
+        <element label="Expiry date" max_length="40" name="expiry_date" type="glide_date"/>
+        <element label="Verification status" max_length="40" name="verification_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Verified" sequence="1" value="verified"/>
+                <element inactive_on_update="false" label="Pending" sequence="0" value="pending"/>
+                <element inactive_on_update="false" label="Expired" sequence="3" value="expired"/>
+                <element inactive_on_update="false" label="Rejected" sequence="2" value="rejected"/>
+            </choice>
+        </element>
+        <element label="Transaction Risk Score" max_length="40" name="transaction_risk_score" type="integer"/>
+        <element label="overall risk score" max_length="40" name="overall_risk_score" type="integer"/>
+        <element label="Rejected Reason" max_length="40" name="rejected_reason" type="string"/>
+        <element label="Country Risk Score" max_length="40" name="country_risk_score" type="integer"/>
+        <element label="Document type" max_length="40" name="document_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Passport" sequence="0" value="passport"/>
+                <element inactive_on_update="false" label="Tax certificate" sequence="3" value="tax_certificate"/>
+                <element inactive_on_update="false" label="National id" sequence="1" value="national_id"/>
+                <element inactive_on_update="false" label="Address proof" sequence="2" value="address_proof"/>
+            </choice>
+        </element>
+        <element label="kyc case" max_length="32" name="kyc_case" reference="x_1994162_bankin_1_kyc_case" type="reference"/>
+        <element label="Adverse Media Flag" max_length="40" name="adverse_media_flag" type="boolean"/>
+        <element label="Risk Band" max_length="40" name="risk_band" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="High" sequence="2" value="high"/>
+                <element inactive_on_update="false" label="Critical" sequence="3" value="critical"/>
+                <element inactive_on_update="false" label="Medium" sequence="1" value="medium"/>
+                <element inactive_on_update="false" label="Low" sequence="0" value="low"/>
+            </choice>
+        </element>
+        <element label="Customer" max_length="32" name="custome0" reference="x_1994162_bankin_0_customer" type="reference"/>
+        <element label="Customer" max_length="32" name="customer" reference="x_1994162_bankin_1_customer" type="reference"/>
+        <element label="Document file" max_length="40" name="document_file" type="file_attachment"/>
+        <element label="Verified by" max_length="32" name="verified_by" reference="imp_user" type="reference"/>
+        <element label="Sanctions Flag" max_length="40" name="sanctions_flag" type="boolean"/>
+        <element label="Assessed By" max_length="32" name="assessed_by" reference="sys_user" type="reference"/>
+        <element label="PEP Flag" max_length="40" name="pep_flag" type="boolean"/>
+        <index name="index">
+            <element name="assessed_by"/>
+        </index>
+        <index name="index2">
+            <element name="custome0"/>
+        </index>
+        <index name="index3">
+            <element name="customer"/>
+        </index>
+        <index name="index4">
+            <element name="kyc_case"/>
+        </index>
+        <index name="index5">
+            <element name="verified_by"/>
+        </index>
+    </element>
+</database>
